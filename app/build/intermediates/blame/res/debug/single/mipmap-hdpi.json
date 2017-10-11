@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/home/ubuntu/デスクトップ/SafetyMap/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/home/ubuntu/デスクトップ/SafetyMap/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ubuntu/デスクトップ/SafetyMap/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher_round.png",
+        "source": "/home/ubuntu/デスクトップ/SafetyMap/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ubuntu/AndroidStudioProjects/SafetyMap/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher_round.png",
+        "source": "/home/ubuntu/AndroidStudioProjects/SafetyMap/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher_round.png",
+        "source": "/home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ubuntu/ダウンロード/SafetyMap/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/home/ubuntu/ダウンロード/SafetyMap/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ubuntu/AndroidStudioProjects/SafetyMap/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/home/ubuntu/AndroidStudioProjects/SafetyMap/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ubuntu/ダウンロード/SafetyMap/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher_round.png",
+        "source": "/home/ubuntu/ダウンロード/SafetyMap/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    }
+]
