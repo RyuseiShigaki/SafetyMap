@@ -4,15 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.shigaki.sano.safetymap.MainActivity"
-    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteY="0dp"
     tools:layout_editor_absoluteX="0dp">
 
     <LinearLayout
         android:layout_width="395dp"
         android:layout_height="587dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="81dp"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="1dp"
         android:weightSum="1"
         android:layout_gravity="center"
         >
@@ -27,7 +27,7 @@
 
             android:text="合志安心マップ"
             android:textAlignment="center"
-            android:textSize="50sp"
+            android:textSize="44sp"
             android:textColor="#ffffff"
             android:background="#0070ff"
             tools:layout_editor_absoluteX="51dp"
@@ -41,40 +41,40 @@
             android:background="#0090ff"
             android:text="最寄りの避難所検索"
             android:textColor="#ffffff"
-            android:textSize="38sp"
+            android:textSize="34sp"
             tools:layout_editor_absoluteX="39dp"
             tools:layout_editor_absoluteY="168dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="147dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="1">
 
             <Button
                 android:id="@+id/add_user_spot"
-                android:layout_width="wrap_content"
+                android:layout_width="198dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.39"
-                android:elevation="2dp"
-                android:text="避難スポットを追加"
-                android:textColor="#ffffff"
                 android:background="#00aaff"
+                android:elevation="2dp"
+                android:text="避難スポットを&#xA;追加"
+                android:textColor="#ffffff"
                 android:textSize="24sp"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="326dp" />
 
             <Button
                 android:id="@+id/button_open_map"
-                android:layout_width="wrap_content"
+                android:layout_width="160dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1.00"
+                android:background="#00bbff"
                 android:elevation="0dp"
                 android:text="マップを開く"
                 android:textColor="#ffffff"
-                android:background="#00bbff"
                 android:textSize="20sp"
                 tools:layout_editor_absoluteX="39dp"
-                tools:layout_editor_absoluteY="326dp" />
+                tools:layout_editor_absoluteY="326dp"
+                android:layout_weight="0.30" />
 
         </LinearLayout>
 
