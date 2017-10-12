@@ -28,6 +28,10 @@
         "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
+        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/layout/popup_window.xml",
+        "source": "/home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/res/layout/popup_window.xml"
+    },
+    {
         "merged": "/home/ubuntu/ダウンロード/SafetyMap/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
         "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout/abc_list_menu_item_icon.xml"
     },

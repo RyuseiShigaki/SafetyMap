@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Button button_open_map = (Button)findViewById(R.id.button_open_map);
         button_open_map.setOnClickListener(new View.OnClickListener() {
             @Override
