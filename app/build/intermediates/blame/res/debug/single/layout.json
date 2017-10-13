@@ -352,6 +352,10 @@
         "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout/abc_select_dialog_material.xml"
     },
     {
+        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/layout/fragment_dialog.xml",
+        "source": "/home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/res/layout/fragment_dialog.xml"
+    },
+    {
         "merged": "/home/ubuntu/AndroidStudioProjects/SafetyMap/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
         "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout/abc_action_bar_title_item.xml"
     },

@@ -1,11 +1,16 @@
 package com.shigaki.sano.safetymap;
 
+import android.content.Context;
 import android.graphics.Color;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -60,11 +65,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng pos3 = new LatLng(32.89,130.76);
 
         //マーカーの追加
-        mKosen = mMap.addMarker(new MarkerOptions().position(kosen).title("Marker in Kosen"));
+        mKosen = mMap.addMarker(new MarkerOptions().position(kosen).title("熊本高専"));
         mKosen.setTag(0);
-        mPos2 = mMap.addMarker(new MarkerOptions().position(pos2).title("Marker in pos2"));
+        mPos2 = mMap.addMarker(new MarkerOptions().position(pos2).title("佐野のトイレ1号"));
         mPos2.setTag(0);
-        mPos3 = mMap.addMarker(new MarkerOptions().position(pos3).title("Marker in pos3"));
+        mPos3 = mMap.addMarker(new MarkerOptions().position(pos3).title("ともきの女子トイレ"));
         mPos3.setTag(0);
 
         //センターカメラの移動
@@ -76,23 +81,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onInfoWindowClick(Marker marker){
-
-        //PopupWindow popupWin;
-
-                /*ポップアップに表示するレイアウトの設定*/
-        //LinearLayout popLayout
-          //      = (LinearLayout)getLayoutInflater().inflate(
-           //     R.layout.popup_window, null);
-        //TextView popupText
-         //       = (TextView)popLayout.findViewById(R.id.popup_text);
-        //popupText.setText("Popup Text");
-
-                /*ポップアップの作成*/
-        //popupWin = new PopupWindow(this);
-        //ここらへん調子悪いです（泣）
-
+        Toast.makeText(this, "ここは"+marker.getTitle()+"です",
+                Toast.LENGTH_SHORT).show();
+        showFragmentDialog(TEST_DIALOG);
     }
 
+    /**フラグメントダイアログを表示する。*/
+    final int TEST_DIALOG = 0;
+    public void showFragmentDialog(int id)
+    {
+        switch(id){
+            case TEST_DIALOG:
+                DialogFragment dialogFragment = MapsDialogFragment.newInstance();
+                dialogFragment.show(getSupportFragmentManager(), "fragment_dialog");
+        }
+    }
 
+    /**OKボタンが押されたことを感知する。*/
+    public void onTestDialogOKClick()
+    {
+        Log.i("MainActivity : ", "OK clicked.");
+    }
 
 }
