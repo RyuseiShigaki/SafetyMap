@@ -19,17 +19,19 @@
 
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/apptitle"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_weight="0.10"
-            android:layout_gravity="center_vertical"
 
-            android:text="合志安心マップ"
-            android:textAlignment="center"
-            android:textSize="44sp"
-            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:layout_weight="0.52"
             android:background="#0070ff"
+            android:paddingRight="20dp"
+            android:paddingTop="40dp"
+            android:text="合志安全マップ"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="44sp"
             tools:layout_editor_absoluteX="51dp"
             tools:layout_editor_absoluteY="45dp" />
 
@@ -47,34 +49,31 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="147dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="1">
 
             <Button
                 android:id="@+id/add_user_spot"
-                android:layout_width="198dp"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="207dp"
                 android:background="#00aaff"
-                android:elevation="2dp"
                 android:text="避難スポットを&#xA;追加"
                 android:textColor="#ffffff"
                 android:textSize="24sp"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="326dp" />
+                android:layout_weight="0.31" />
 
             <Button
                 android:id="@+id/button_open_map"
                 android:layout_width="160dp"
                 android:layout_height="match_parent"
+                android:layout_weight="0.30"
                 android:background="#00bbff"
                 android:elevation="0dp"
                 android:text="マップを開く"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
-                tools:layout_editor_absoluteX="39dp"
-                tools:layout_editor_absoluteY="326dp"
-                android:layout_weight="0.30" />
+                 />
 
         </LinearLayout>
 

@@ -2,16 +2,114 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:gravity="center"
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/marker_title"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="しまだです"
+        android:text="タイトル"
+        android:textColor="@android:color/holo_blue_dark"
         android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/marker_explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="説明文"
+        android:textColor="@android:color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_blue_dark" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="この情報は正しいですか？"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_question"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button_collect"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="false"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="正しい"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/total_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/button_collect"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:text="○件" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button_wrong"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="間違い"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/total_wrong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/button_wrong"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:text="○件" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>
