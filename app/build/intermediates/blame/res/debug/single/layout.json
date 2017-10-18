@@ -236,6 +236,10 @@
         "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout/abc_action_bar_title_item.xml"
     },
     {
+        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/layout/activity_add_place.xml",
+        "source": "/home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/res/layout/activity_add_place.xml"
+    },
+    {
         "merged": "/home/ubuntu/ダウンロード/SafetyMap/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
         "source": "/home/ubuntu/ダウンロード/SafetyMap/app/src/main/res/layout/activity_main.xml"
     },

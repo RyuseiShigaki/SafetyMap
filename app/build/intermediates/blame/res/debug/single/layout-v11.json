@@ -52,12 +52,12 @@
         "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v11/notification_media_cancel_action.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v11/notification_template_big_media.xml"
-    },
-    {
         "merged": "/home/ubuntu/デスクトップ/SafetyMap/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_custom.xml",
         "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v11/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media.xml",
+        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v11/notification_template_big_media.xml"
     },
     {
         "merged": "/home/ubuntu/AndroidStudioProjects/SafetyMap/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media.xml",

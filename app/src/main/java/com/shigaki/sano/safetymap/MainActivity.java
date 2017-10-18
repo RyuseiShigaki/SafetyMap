@@ -32,6 +32,15 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
+
+        Button add_user_spot = (Button)findViewById(R.id.add_user_spot);
+        add_user_spot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AddPlaceActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void doAddEntry( SQLiteDatabase db, int id, String name, String explanation, double latitude, double longitude ){

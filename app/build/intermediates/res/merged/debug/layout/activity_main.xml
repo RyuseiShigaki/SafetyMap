@@ -10,20 +10,19 @@
     <LinearLayout
         android:layout_width="395dp"
         android:layout_height="587dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="1dp"
-        android:weightSum="1"
         android:layout_gravity="center"
-        >
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="-10dp">
 
 
         <TextView
             android:id="@+id/apptitle"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_width="369dp"
+            android:layout_height="130dp"
 
-            android:layout_gravity="center"
+
             android:layout_weight="0.52"
             android:background="#0070ff"
             android:paddingRight="20dp"
@@ -37,9 +36,9 @@
 
         <Button
             android:id="@+id/search_near_spot"
-            android:layout_width="match_parent"
-            android:layout_height="168dp"
-            android:layout_weight="0.46"
+            android:layout_width="369dp"
+            android:layout_height="270dp"
+            android:layout_weight="0.09"
             android:background="#0090ff"
             android:text="最寄りの避難所検索"
             android:textColor="#ffffff"
@@ -57,11 +56,11 @@
                 android:id="@+id/add_user_spot"
                 android:layout_width="wrap_content"
                 android:layout_height="207dp"
+                android:layout_weight="0.31"
                 android:background="#00aaff"
                 android:text="避難スポットを&#xA;追加"
                 android:textColor="#ffffff"
-                android:textSize="24sp"
-                android:layout_weight="0.31" />
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/button_open_map"
@@ -72,8 +71,7 @@
                 android:elevation="0dp"
                 android:text="マップを開く"
                 android:textColor="#ffffff"
-                android:textSize="20sp"
-                 />
+                android:textSize="20sp" />
 
         </LinearLayout>
 

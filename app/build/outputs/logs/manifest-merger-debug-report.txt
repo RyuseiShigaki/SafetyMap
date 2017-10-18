@@ -17,8 +17,13 @@ uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:10:5-79
 	android:name
 		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:10:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.0.2] /home/ubuntu/.android/build-cache/c5faee5188e4d4d266cb6b5572b81242fbd87b3d/output/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:11:22-64
 application
-ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:12:5-44:19
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:13:5-44:19
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/ubuntu/.android/build-cache/832b89ca8b6dcb623a74d0168c545e050532142f/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/ubuntu/.android/build-cache/3602b3f52473e84c9df5d0f162f26ce10f98a4b1/output/AndroidManifest.xml:26:5-20
@@ -34,43 +39,47 @@ MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/ubuntu/.an
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/ubuntu/.android/build-cache/db43737df67a32c50083cd3c69ba5e4ac6e1eaee/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/ubuntu/.android/build-cache/995555924a8c6efc1daead7cb16eb5fb77d8f0e4/output/AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:16:9-41
 	android:supportsRtl
-		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:17:9-35
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:18:9-35
 	android:roundIcon
-		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:16:9-54
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:17:9-54
 	android:allowBackup
-		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:14:9-35
 	android:icon
-		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:14:9-43
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:15:9-43
 	android:theme
-		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:18:9-40
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:19:9-40
 meta-data#com.google.android.geo.API_KEY
-ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:28:9-30:55
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:29:9-31:55
 	android:value
-		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:30:13-52
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:31:13-52
 	android:name
-		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:29:13-58
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:30:13-58
 activity#com.shigaki.sano.safetymap.MapsActivity
-ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:32:9-36:20
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:33:9-35:68
 	android:label
-		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:34:13-56
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:35:13-56
 	android:name
-		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:33:13-41
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:34:13-41
 activity#com.shigaki.sano.safetymap.MainActivity
-ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:37:9-43:20
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:36:9-42:20
 	android:name
-		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:37:19-47
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:36:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:38:13-42:29
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:37:13-41:29
 action#android.intent.action.MAIN
-ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:39:17-69
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:38:17-69
 	android:name
-		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:39:25-66
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:38:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:41:17-77
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:40:17-77
 	android:name
-		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:41:27-74
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:40:27-74
+activity#com.shigaki.sano.safetymap.AddPlaceActivity
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:43:9-63
+	android:name
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:43:19-51
 uses-sdk
 INJECTED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/AndroidManifest.xml:21:5-23:78
@@ -113,10 +122,6 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-maps:11.0.2] /home/ubuntu/.android/build-cache/c5faee5188e4d4d266cb6b5572b81242fbd87b3d/output/AndroidManifest.xml:19:5-78
 	android:name
 		ADDED from [com.google.android.gms:play-services-maps:11.0.2] /home/ubuntu/.android/build-cache/c5faee5188e4d4d266cb6b5572b81242fbd87b3d/output/AndroidManifest.xml:19:22-76
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.android.gms:play-services-maps:11.0.2] /home/ubuntu/.android/build-cache/c5faee5188e4d4d266cb6b5572b81242fbd87b3d/output/AndroidManifest.xml:20:5-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-maps:11.0.2] /home/ubuntu/.android/build-cache/c5faee5188e4d4d266cb6b5572b81242fbd87b3d/output/AndroidManifest.xml:20:22-64
 uses-feature#0x00020000
 ADDED from [com.google.android.gms:play-services-maps:11.0.2] /home/ubuntu/.android/build-cache/c5faee5188e4d4d266cb6b5572b81242fbd87b3d/output/AndroidManifest.xml:21:5-77
 	android:glEsVersion
