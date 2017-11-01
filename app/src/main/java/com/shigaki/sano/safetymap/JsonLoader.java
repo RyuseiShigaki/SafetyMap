@@ -5,6 +5,8 @@ import android.content.AsyncTaskLoader;
 import org.json.JSONException;
 import org.json.JSONObject;
 import android.content.Context;
+import android.util.Base64;
+import android.util.Log;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
@@ -29,16 +31,23 @@ public class JsonLoader extends AsyncTaskLoader<JSONObject> {
         HttpURLConnection connection = null;
 
         try{
+            final String USERNAME = "te14shigaki";
+            final String PASSWORD = "Asdfreply6";
             URL url = new URL(urlText);
             connection = (HttpURLConnection)url.openConnection();
+            final String userPassword = USERNAME+":"+PASSWORD;
+            final String encodeAuthorization = Base64.encodeToString(userPassword.getBytes(), Base64.NO_WRAP);
+            connection.setRequestProperty("Authorization", "Basic " + encodeAuthorization);
             connection.setRequestMethod("GET");
             connection.connect();
         }
         catch (MalformedURLException exception){
             // 処理なし
+            Log.d("loadInBackground","MalformedURLException例外");
         }
         catch (IOException exception){
             // 処理なし
+            Log.d("loadInBackground","IO例外!!!!!"+exception.getMessage());
         }
 
         try{

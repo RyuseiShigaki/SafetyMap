@@ -49,6 +49,9 @@ public class MainActivity extends Activity implements LoaderManager.LoaderCallba
         // TextViewを取得
         textView = (TextView)findViewById(R.id.test1);
 
+        // JSONの取得
+        getLoaderManager().restartLoader(1, null, this);
+
 
 
         Button button_open_map = findViewById(R.id.button_open_map);
@@ -72,9 +75,10 @@ public class MainActivity extends Activity implements LoaderManager.LoaderCallba
 
     @Override
     public Loader<JSONObject> onCreateLoader(int id, Bundle args) {
-        String urlText = "http://animemap.net/api/table/tokyo.json";
+        String urlText = "http://edu3.te.kumamoto-nct.ac.jp:8088/~te14shigaki/PBL/testdata.json";
         JsonLoader jsonLoader = new JsonLoader(this, urlText);
         jsonLoader.forceLoad();
+
         return  jsonLoader;
     }
 
@@ -83,8 +87,8 @@ public class MainActivity extends Activity implements LoaderManager.LoaderCallba
         if (data != null) {
 
             try {
-                JSONObject jsonObject = data.getJSONObject("request");
-                textView.setText(jsonObject.getString("url"));
+                 JSONObject jsonObject = data.getJSONObject("data").getJSONObject("m0");
+                textView.setText(jsonObject.getString("name"));
             } catch (JSONException e) {
                 Log.d("onLoadFinished","JSONのパースに失敗しました。 JSONException=" + e);
             }
