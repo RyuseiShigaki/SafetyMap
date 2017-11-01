@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Nov 01 13:07:10 JST 2017
+#Wed Nov 01 14:27:56 JST 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png
