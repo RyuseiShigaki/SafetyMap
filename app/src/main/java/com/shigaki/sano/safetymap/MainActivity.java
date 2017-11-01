@@ -59,6 +59,15 @@ public class MainActivity extends Activity implements LoaderManager.LoaderCallba
                 startActivity(intent);
             }
         });
+
+        Button add_user_spot = (Button)findViewById(R.id.add_user_spot);
+        add_user_spot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AddPlaceActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

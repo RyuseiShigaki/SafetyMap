@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shigaki.sano.safetymap.AddPlaceActivity"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="289dp"
+        android:layout_height="59dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="72dp"
+        android:layout_height="59dp"
+        android:layout_weight="1"
+        android:background="#00bbff"
+        android:gravity="center"
+        android:text="名前"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="359dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:background="#00bbff"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="説明"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="361dp"
+        android:layout_height="167dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteY="196dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1111ff"
+        android:text="追加"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="404dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
