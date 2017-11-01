@@ -19,6 +19,13 @@
 
 
         <TextView
+            android:id="@+id/test1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.52"
+            android:text="TextView" />
+
+        <TextView
             android:id="@+id/apptitle"
             android:layout_width="match_parent"
             android:layout_height="48dp"

@@ -1,34 +1,10 @@
 [
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/SafetyMap/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
         "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
         "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "/home/ubuntu/ダウンロード/SafetyMap/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
-        "merged": "/home/ubuntu/ダウンロード/SafetyMap/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
-    },
-    {
-        "merged": "/home/ubuntu/AndroidStudioProjects/SafetyMap/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
-    },
-    {
-        "merged": "/home/ubuntu/デスクトップ/SafetyMap/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
         "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
-    },
-    {
-        "merged": "/home/ubuntu/デスクトップ/SafetyMap/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
         "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
     }
 ]

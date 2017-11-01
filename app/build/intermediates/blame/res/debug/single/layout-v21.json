@@ -12,55 +12,7 @@
         "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v21/notification_template_custom_big.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/SafetyMap/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v21/notification_template_icon_group.xml"
-    },
-    {
-        "merged": "/home/ubuntu/デスクトップ/SafetyMap/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v21/notification_template_custom_big.xml"
-    },
-    {
-        "merged": "/home/ubuntu/ダウンロード/SafetyMap/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v21/notification_template_icon_group.xml"
-    },
-    {
-        "merged": "/home/ubuntu/ダウンロード/SafetyMap/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v21/notification_action.xml"
-    },
-    {
-        "merged": "/home/ubuntu/デスクトップ/SafetyMap/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v21/notification_action.xml"
-    },
-    {
-        "merged": "/home/ubuntu/ダウンロード/SafetyMap/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v21/notification_template_custom_big.xml"
-    },
-    {
         "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v21/notification_action_tombstone.xml"
-    },
-    {
-        "merged": "/home/ubuntu/デスクトップ/SafetyMap/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v21/notification_template_icon_group.xml"
-    },
-    {
-        "merged": "/home/ubuntu/AndroidStudioProjects/SafetyMap/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v21/notification_template_custom_big.xml"
-    },
-    {
-        "merged": "/home/ubuntu/AndroidStudioProjects/SafetyMap/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v21/notification_action_tombstone.xml"
-    },
-    {
-        "merged": "/home/ubuntu/AndroidStudioProjects/SafetyMap/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v21/notification_action.xml"
-    },
-    {
-        "merged": "/home/ubuntu/ダウンロード/SafetyMap/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v21/notification_action_tombstone.xml"
-    },
-    {
-        "merged": "/home/ubuntu/デスクトップ/SafetyMap/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
         "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/layout-v21/notification_action_tombstone.xml"
     }
 ]
