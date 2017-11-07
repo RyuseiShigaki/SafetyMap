@@ -1,7 +1,9 @@
 package com.shigaki.sano.safetymap;
 
 import android.Manifest;
+import android.app.LoaderManager;
 import android.content.Context;
+import android.content.Loader;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Color;
@@ -27,6 +29,13 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -34,6 +43,9 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.HashMap;
 
@@ -45,6 +57,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Marker mKosen;
     private Marker mPos2;
     private Marker mPos3;
+
+    public JSONObject spotData;
 
     HashMap<String,String> marker_explanation = new HashMap<>();
     HashMap<String,Integer> marker_total_collect = new HashMap<>();
@@ -59,12 +73,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //doJsonTask();
+
+        while(spotData==null){}
+
         setContentView(R.layout.activity_maps);
 
         TextView marker_title = (TextView)findViewById(R.id.marker_title);
         TextView marker_explanation = (TextView)findViewById(R.id.marker_explanation);
         TextView total_collect = (TextView)findViewById(R.id.total_collect);
         TextView total_wrong = (TextView)findViewById(R.id.total_wrong);
+
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -90,6 +110,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+        try {
+            spotData.getJSONArray("data");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+
+
         // 各マーカーの座標
         LatLng kosen = new LatLng(32.876904, 130.7479490);
         LatLng pos2 = new LatLng(32.88,130.75);
@@ -113,6 +141,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         marker_explanation.put(mPos3.getId(),"超くさいよ！");
         marker_total_collect.put(mPos3.getId(),5000);
         marker_total_wrong.put(mPos3.getId(),3);
+
         //動作不安定のためコメントアウト中
         /*//現在地取得の許可が降りているかを確認
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)

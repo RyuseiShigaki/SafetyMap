@@ -18,8 +18,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.shigaki.sano.safetymap.db.PlaceDBHelper;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -27,9 +34,8 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class MainActivity extends Activity implements LoaderManager.LoaderCallbacks<JSONObject> {
+public class MainActivity extends Activity {
 
-    String data;
     TextView textView;
 
     @Override
@@ -38,20 +44,8 @@ public class MainActivity extends Activity implements LoaderManager.LoaderCallba
 
         setContentView(R.layout.activity_main);
 
-        /*
-        //HTTP,GET通信の処理(テスト用)
-        Uri.Builder builder = new Uri.Builder();
-        AsyncPostHttpRequest task = new AsyncPostHttpRequest(this);
-        task.execute(builder);
-        //通信処理ここまで
-        */
-
         // TextViewを取得
-        textView = (TextView)findViewById(R.id.test1);
-
-        // JSONの取得
-        getLoaderManager().restartLoader(1, null, this);
-
+        textView = (TextView) findViewById(R.id.test1);
 
 
         Button button_open_map = findViewById(R.id.button_open_map);
@@ -63,7 +57,7 @@ public class MainActivity extends Activity implements LoaderManager.LoaderCallba
             }
         });
 
-        Button add_user_spot = (Button)findViewById(R.id.add_user_spot);
+        Button add_user_spot = (Button) findViewById(R.id.add_user_spot);
         add_user_spot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,35 +66,4 @@ public class MainActivity extends Activity implements LoaderManager.LoaderCallba
             }
         });
     }
-
-    @Override
-    public Loader<JSONObject> onCreateLoader(int id, Bundle args) {
-        String urlText = "http://edu3.te.kumamoto-nct.ac.jp:8088/~te14shigaki/PBL/testdata.json";
-        JsonLoader jsonLoader = new JsonLoader(this, urlText);
-        jsonLoader.forceLoad();
-
-        return  jsonLoader;
-    }
-
-    @Override
-    public void onLoadFinished(Loader<JSONObject> loader, JSONObject data) {
-        if (data != null) {
-
-            try {
-                 JSONObject jsonObject = data.getJSONObject("data").getJSONObject("m0");
-                textView.setText(jsonObject.getString("name"));
-            } catch (JSONException e) {
-                Log.d("onLoadFinished","JSONのパースに失敗しました。 JSONException=" + e);
-            }
-        }else{
-            Log.d("onLoadFinished", "onLoadFinished error!");
-        }
-    }
-
-    @Override
-    public void onLoaderReset(Loader<JSONObject> loader) {
-        // 処理なし
-    }
-
-
 }
