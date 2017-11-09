@@ -58,8 +58,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Marker mPos2;
     private Marker mPos3;
 
-    public JSONObject spotData;
-
     HashMap<String,String> marker_explanation = new HashMap<>();
     HashMap<String,Integer> marker_total_collect = new HashMap<>();
     HashMap<String,Integer> marker_total_wrong = new HashMap<>();
@@ -73,10 +71,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        //doJsonTask();
-
-        while(spotData==null){}
 
         setContentView(R.layout.activity_maps);
 
@@ -109,14 +103,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
-        try {
-            spotData.getJSONArray("data");
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
-
 
         // 各マーカーの座標
         LatLng kosen = new LatLng(32.876904, 130.7479490);
