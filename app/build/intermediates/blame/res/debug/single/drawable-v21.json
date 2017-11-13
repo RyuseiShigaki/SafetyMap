@@ -1,18 +1,18 @@
 [
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/drawable-v21/abc_edit_text_material.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/drawable-v21/abc_edit_text_material.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/drawable-v21/notification_action_background.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/drawable-v21/abc_btn_colored_material.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/drawable-v21/abc_btn_colored_material.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/drawable-v21/notification_action_background.xml"
     }
 ]

@@ -1,94 +1,94 @@
 [
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_btn_colored_borderless_text_material.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/switch_thumb_material_dark.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_hint_foreground_material_dark.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/switch_thumb_material_dark.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/shigashan/.android/build-cache/3bf7544bec99ae5388ab0fc324ac2ea23a47c94f/output/res/color/common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_primary_text_material_dark.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_tint_switch_track.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_hint_foreground_material_dark.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_tint_btn_checkable.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_tint_switch_thumb.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
-        "source": "/home/ubuntu/.android/build-cache/57bb4013162d77d34063d8ecc2be0b0d5f947b7c/output/res/color/common_google_signin_btn_text_light.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
-        "source": "/home/ubuntu/.android/build-cache/57bb4013162d77d34063d8ecc2be0b0d5f947b7c/output/res/color/common_google_signin_btn_tint.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_secondary_text_material_dark.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_btn_colored_text_material.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_tint_switch_track.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/home/shigashan/.android/build-cache/3bf7544bec99ae5388ab0fc324ac2ea23a47c94f/output/res/color/common_google_signin_btn_tint.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_tint_spinner.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_search_url_text.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_secondary_text_material_light.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_tint_switch_thumb.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/shigashan/.android/build-cache/3bf7544bec99ae5388ab0fc324ac2ea23a47c94f/output/res/color/common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_tint_default.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/switch_thumb_material_light.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_secondary_text_material_dark.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_btn_colored_text_material.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_hint_foreground_material_light.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_primary_text_material_light.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
-        "source": "/home/ubuntu/.android/build-cache/57bb4013162d77d34063d8ecc2be0b0d5f947b7c/output/res/color/common_google_signin_btn_text_dark.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/switch_thumb_material_light.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_tint_default.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_primary_text_disable_only_material_light.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_tint_edittext.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_primary_text_material_light.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_tint_edittext.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_search_url_text.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_hint_foreground_material_light.xml"
     },
     {
-        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
-        "source": "/home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/res/color/abc_tint_seek_thumb.xml"
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/color/abc_tint_spinner.xml"
     }
 ]

@@ -1,65 +1,45 @@
 package com.shigaki.sano.safetymap;
+import android.preference.PreferenceActivity;
+import android.util.Log;
+import com.loopj.android.http.*;
 
-import android.app.Activity;
-import android.os.AsyncTask;
+import static android.R.id.progress;
+import static android.content.ContentValues.TAG;
 
-import java.io.ByteArrayOutputStream;
-import java.util.List;
+class ReadJson {
 
-import cz.msebera.android.httpclient.HttpResponse;
-import cz.msebera.android.httpclient.NameValuePair;
-import cz.msebera.android.httpclient.client.HttpClient;
-import cz.msebera.android.httpclient.client.methods.HttpPost;
-import cz.msebera.android.httpclient.impl.client.DefaultHttpClient;
+    AsyncHttpClient client = new AsyncHttpClient();
 
-/**
- * Created by ubuntu on 17/11/08.
- */
+    void readStart() {
+        // 注意：onStart -> onSuccess -> onFinishの順番で呼ばれる
+        client.get("http://www.yahoo.co.jp", new AsyncHttpResponseHandler() {
 
-public class ReadJson extends AsyncTask<Void, Void, String> {
+            @Override
+            public void onSuccess(String response) {
+                progress.dismiss();
+                Log.i(TAG, "onSuccess");
+                Log.v(TAG, responseh);
+            }
 
-    private CallBackTask callbacktask;
+            @Override
+            public void onFinish() {
+                Log.i(TAG, "onFinish");
+                progress.dismiss();
+            }
 
-    private Activity m_Activity;
+            @Override
+            public void onStart() {
+                Log.i(TAG, "onStart");
+                progress.show();
+            }
 
-    private static final String url = "http://nvtrlab.jp/test.php";
+            @Override
+            public void onFailure(int statusCode, PreferenceActivity.Header[] headers, byte[] errorResponse, Throwable e) {
+                // called when response HTTP status is "4XX" (eg. 401, 403, 404)
+            }
 
-    //クライアント設定
-    HttpClient httpclient = new DefaultHttpClient();
-    HttpPost httppost = new HttpPost(url);
-
-    List<NameValuePair> nameValuePair;
-    HttpResponse response;
-    HttpResponse res = null;
-
-    @Override
-    protected void onPreExecute() {
-        super.onPreExecute();
-        // doInBackground前処理
+        });
     }
 
-    @Override
-    protected String doInBackground(Void... params) {
-        return null;
-    }
-
-    @Override
-    protected void onPostExecute(String result) {
-        super.onPostExecute(result);
-        // doInBackground後処理
-        callbacktask.CallBack(result);
-    }
-
-    public void setOnCallBack(CallBackTask _cbj) {
-        callbacktask = _cbj;
-    }
-
-    /**
-     * コールバック用のstaticなclass
-     */
-    public static class CallBackTask {
-        public void CallBack(String result) {
-        }
-    }
 
 }

@@ -56,7 +56,7 @@ public class ReadJsonFromSql {
 
         // スキーム登録：スキーム(httpやhttpsなんか)を登録します。ポート3306番で接続
         SchemeRegistry schReg = new SchemeRegistry();
-        schReg.register(new Scheme(HttpHost.DEFAULT_SCHEME_NAME, PlainSocketFactory.getSocketFactory(),3306));
+        schReg.register(new Scheme(HttpHost.DEFAULT_SCHEME_NAME, PlainSocketFactory.getSocketFactory(),8808));
 
         // HTTPパラメータ設定：プロトコルやエンコードを指定します。
         HttpParams httpParams;
