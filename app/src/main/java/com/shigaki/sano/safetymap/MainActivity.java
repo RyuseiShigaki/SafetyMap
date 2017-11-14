@@ -44,19 +44,19 @@ public class MainActivity extends Activity {
 
         setContentView(R.layout.activity_main);
 
-        ReadJsonFromSql data = new ReadJsonFromSql("localhost","http://edu3.te.kumamoto-nct.ac.jp:8088/~te14shigaki/PBL/read.php",
-                "TEST_DATA2","te14shigaki");
+        ReadJson json1 = new ReadJson();
 
-        data.ReadStart();
+        json1.setOnCallBack(new ReadJson.CallBackTask() {
+            @Override
+            public void CallBack(JSONArray result) {
+                super.CallBack(result);
+                // resultにはdoInBackgroundの返り値が入ります。
+                // ここからAsyncTask処理後の処理を記述します。
+                Log.i("AsyncTaskCallback", "非同期処理が終了しました。");
+            }
+        });
 
-        TextView t1 = (TextView)findViewById(R.id.test1);
-
-        try {
-            t1.setText(data.json_array.getJSONObject(0).getString("name"));
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
+        json1.rereadVolley();
 
         Button button_open_map = findViewById(R.id.button_open_map);
         button_open_map.setOnClickListener(new View.OnClickListener() {
@@ -80,9 +80,5 @@ public class MainActivity extends Activity {
 
 
     }
-
-
-
-
 
 }

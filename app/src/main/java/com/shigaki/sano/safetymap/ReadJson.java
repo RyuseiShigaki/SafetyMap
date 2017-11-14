@@ -1,44 +1,77 @@
 package com.shigaki.sano.safetymap;
-import android.preference.PreferenceActivity;
+
+import android.app.Application;
 import android.util.Log;
-import com.loopj.android.http.*;
+import android.widget.Toast;
 
-import static android.R.id.progress;
-import static android.content.ContentValues.TAG;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 
-class ReadJson {
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-    AsyncHttpClient client = new AsyncHttpClient();
+public class ReadJson{
 
-    void readStart() {
-        // 注意：onStart -> onSuccess -> onFinishの順番で呼ばれる
-        client.get("http://www.yahoo.co.jp", new AsyncHttpResponseHandler() {
+    JSONArray data;
+    private CallBackTask callbacktask;
 
-            @Override
-            public void onSuccess(String response) {
-                progress.dismiss();
-                Log.i(TAG, "onSuccess");
-                Log.v(TAG, responseh);
-            }
+    public void rereadVolley() {
 
-            @Override
-            public void onFinish() {
-                Log.i(TAG, "onFinish");
-                progress.dismiss();
-            }
+            //サーバーのアドレス任意
+            String GET_URL="http://edu3.te.kumamoto-nct.ac.jp:8088/~te14shigaki/PBL/connection.php";
 
-            @Override
-            public void onStart() {
-                Log.i(TAG, "onStart");
-                progress.show();
-            }
+            //queue
+            RequestQueue getQueue= Volley.newRequestQueue(safetymap.getAppContext());
 
-            @Override
-            public void onFailure(int statusCode, PreferenceActivity.Header[] headers, byte[] errorResponse, Throwable e) {
-                // called when response HTTP status is "4XX" (eg. 401, 403, 404)
-            }
+            //Volleyによる通信開始　（GETかPOST、サーバーのURL、受信メゾット、エラーメゾット）
+            JsonObjectRequest mRequest = new JsonObjectRequest(Request.Method.GET,GET_URL,
 
-        });
+                    // 通信成功
+                    new Response.Listener<JSONObject>() {
+                        @Override
+                        public void onResponse(JSONObject response) {
+                            //リストを更新する
+                            try {
+                                JSONArray res_data= response.getJSONArray("JSON_DATA");
+                                Log.i("readsuccess!!!",res_data.getJSONObject(0).getString("name"));
+                                setData(res_data);
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    },
+
+                    // 通信失敗
+                    new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Log.i("erroooor","通信に失敗しました。"+error);
+                        }
+                    }
+            );
+
+            getQueue.add(mRequest);
+
+    }
+
+    public void setOnCallBack(CallBackTask _cbj) {
+        callbacktask = _cbj;
+    }
+
+    public void setData(JSONArray res_data){
+        this.data = res_data;
+        callbacktask.CallBack(this.data);
+    }
+
+    public static class CallBackTask {
+        public void CallBack(JSONArray result) {
+        }
     }
 
 
