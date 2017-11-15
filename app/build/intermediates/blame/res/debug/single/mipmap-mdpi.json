@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/mipmap-mdpi/safety_icon.png",
+        "source": "/home/shigashan/AndroidStudioProjects/safetymap/app/src/main/res/mipmap-mdpi/safety_icon.png"
+    },
+    {
         "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher_round.png",
         "source": "/home/shigashan/AndroidStudioProjects/safetymap/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },

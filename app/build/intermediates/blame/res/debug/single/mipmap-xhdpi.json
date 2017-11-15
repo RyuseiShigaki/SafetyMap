@@ -4,6 +4,10 @@
         "source": "/home/shigashan/AndroidStudioProjects/safetymap/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/mipmap-xhdpi/safety_icon.png",
+        "source": "/home/shigashan/AndroidStudioProjects/safetymap/app/src/main/res/mipmap-xhdpi/safety_icon.png"
+    },
+    {
         "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
         "source": "/home/shigashan/AndroidStudioProjects/safetymap/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     }

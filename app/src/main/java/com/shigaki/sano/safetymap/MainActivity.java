@@ -42,6 +42,10 @@ public class MainActivity extends Activity {
 
         setContentView(R.layout.activity_main);
 
+        //LoadLocation l1=new LoadLocation();
+        //l1.loadstart();
+
+
 
 
         Button button_open_map = findViewById(R.id.button_open_map);
@@ -62,7 +66,16 @@ public class MainActivity extends Activity {
             }
         });
 
+        Button search_near_spot = (Button) findViewById(R.id.search_near_spot);
+        search_near_spot.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SortDistanceActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        
 
 
     }

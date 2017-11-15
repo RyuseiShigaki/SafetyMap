@@ -26,7 +26,7 @@
             android:weightSum="1">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/てすと"
                 android:layout_width="110dp"
                 android:layout_height="61dp"
                 android:layout_gravity="center"
@@ -98,7 +98,8 @@
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:text="32.886034" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -116,16 +117,26 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:text="130.789641" />
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.06"
+            android:gravity="center"
+            android:text="デフォルトで合志市役所の緯度経度が入力されています" />
 
         <Button
             android:id="@+id/add_button"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|center_horizontal|center"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30sp"
             android:background="#0070ff"
             android:gravity="center_vertical|center_horizontal|center"
             android:text="追加"

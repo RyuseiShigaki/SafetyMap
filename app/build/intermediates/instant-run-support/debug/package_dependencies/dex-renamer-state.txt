@@ -1,4 +1,4 @@
-#Tue Nov 14 15:59:55 JST 2017
+#Wed Nov 15 15:14:47 JST 2017
 file.2=/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/transforms/dex/debug/folders/1000/10/android-async-http-1.4.9_80813006a2b04cd6cfbcae9981f7ab91c68df5ef/classes.dex
 base.2=/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/transforms/dex/debug/folders/1000/10/android-async-http-1.4.9_80813006a2b04cd6cfbcae9981f7ab91c68df5ef
 file.1=/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.0.0-alpha1_e7d621e52288fa0e758362a8c316877cd9430a12/classes.dex

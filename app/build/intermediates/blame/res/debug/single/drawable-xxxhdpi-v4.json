@@ -40,12 +40,12 @@
         "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png",
-        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png",
         "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
