@@ -168,6 +168,10 @@
         "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/layout/abc_search_view.xml"
     },
     {
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/layout/activity_sort_distance.xml",
+        "source": "/home/shigashan/AndroidStudioProjects/safetymap/app/src/main/res/layout/activity_sort_distance.xml"
+    },
+    {
         "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
         "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },

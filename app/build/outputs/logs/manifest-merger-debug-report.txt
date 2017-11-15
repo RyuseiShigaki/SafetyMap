@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:2:1-47:12
+ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:2:1-48:12
 	package
 		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:3:5-41
 		INJECTED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
@@ -23,7 +23,7 @@ MERGED from [com.google.android.gms:play-services-maps:11.0.2] /home/shigashan/.
 	android:name
 		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:11:22-64
 application
-ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:13:5-45:19
+ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:13:5-46:19
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/shigashan/.android/build-cache/22a67a53b55df3060927a696b2f8f2f24845a7a3/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/shigashan/.android/build-cache/1818ded6443bae2ffd9794cad0962a2239980b17/output/AndroidManifest.xml:26:5-20
@@ -51,7 +51,7 @@ MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/shigashan/.
 	android:theme
 		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:20:9-40
 	android:name
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:14:9-60
+		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:14:9-34
 meta-data#com.google.android.geo.API_KEY
 ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:30:9-32:55
 	android:value
@@ -59,7 +59,7 @@ ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidM
 	android:name
 		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:31:13-58
 activity#com.shigaki.sano.safetymap.MapsActivity
-ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:34:9-36:68
+ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:34:9-36:59
 	android:label
 		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:36:13-56
 	android:name
@@ -79,9 +79,13 @@ ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidM
 	android:name
 		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:41:27-74
 activity#com.shigaki.sano.safetymap.AddPlaceActivity
-ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:44:9-63
+ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:44:9-54
 	android:name
 		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:44:19-51
+activity#com.shigaki.sano.safetymap.SortDistanceActivity
+ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:45:9-67
+	android:name
+		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:45:19-55
 uses-sdk
 INJECTED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/AndroidManifest.xml:21:5-23:78

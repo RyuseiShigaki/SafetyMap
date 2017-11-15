@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -58,12 +59,20 @@ public class MapsDialogFragment extends DialogFragment
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"ご協力ありがとうございます！",Toast.LENGTH_SHORT).show();
+                UpdateNumber setCollect = new UpdateNumber(getArguments().getString("title"),"collect");
+                setCollect.rereadVolley();
+                Intent intent = new Intent(getActivity(), MapsActivity.class);
+                startActivity(intent);
             }
         });
         button_wrong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"ご協力ありがとうございます！！",Toast.LENGTH_SHORT).show();
+                UpdateNumber setWrong = new UpdateNumber(getArguments().getString("title"),"wrong");
+                setWrong.rereadVolley();
+                Intent intent = new Intent(getActivity(), MapsActivity.class);
+                startActivity(intent);
             }
         });
 

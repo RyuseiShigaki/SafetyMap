@@ -3,6 +3,7 @@ package com.shigaki.sano.safetymap;
 import android.Manifest;
 import android.app.LoaderManager;
 import android.content.Context;
+import android.content.Intent;
 import android.content.Loader;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
@@ -18,6 +19,7 @@ import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,9 +46,11 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 
@@ -54,18 +58,10 @@ import java.util.HashMap;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnInfoWindowClickListener {
 
     private GoogleMap mMap;
-    private Marker mKosen;
-    private Marker mPos2;
-    private Marker mPos3;
 
     HashMap<String,String> marker_explanation = new HashMap<>();
     HashMap<String,Integer> marker_total_collect = new HashMap<>();
     HashMap<String,Integer> marker_total_wrong = new HashMap<>();
-
-    private double mylatitude;
-    private double mylongitude;
-    private Location myLocate;
-    private LocationManager locationManager;
 
 
     @Override
@@ -73,12 +69,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_maps);
-
-        TextView marker_title = (TextView)findViewById(R.id.marker_title);
-        TextView marker_explanation = (TextView)findViewById(R.id.marker_explanation);
-        TextView total_collect = (TextView)findViewById(R.id.total_collect);
-        TextView total_wrong = (TextView)findViewById(R.id.total_wrong);
-
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -102,74 +92,54 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
+
+        ReadJson json1 = new ReadJson();
+
         mMap = googleMap;
 
         // 各マーカーの座標
         LatLng kosen = new LatLng(32.876904, 130.7479490);
-        LatLng pos2 = new LatLng(32.88,130.75);
-        LatLng pos3 = new LatLng(32.89,130.76);
 
-        //現在地からの距離
+        json1.setOnCallBack(new ReadJson.CallBackTask() {
+            @Override
+            public void CallBack(JSONArray result) {
+                super.CallBack(result);
+                // resultにはdoInBackgroundの返り値が入ります。
+                // ここからAsyncTask処理後の処理を記述します。
 
-        //マーカーの追加
-        mKosen = mMap.addMarker(new MarkerOptions().position(kosen).title("熊本高専").snippet("現在地からの距離:5kmぐらい"));
-        mKosen.setTag(0);
-        marker_explanation.put(mKosen.getId(),"たのしいがっこうだょ！");
-        marker_total_collect.put(mKosen.getId(),3);
-        marker_total_wrong.put(mKosen.getId(),1);
-        mPos2 = mMap.addMarker(new MarkerOptions().position(pos2).title("佐野のトイレ1号").snippet("現在地からの距離:5kmぐらい"));
-        mPos2.setTag(0);
-        marker_explanation.put(mPos2.getId(),"くさいよ！");
-        marker_total_collect.put(mPos2.getId(),100);
-        marker_total_wrong.put(mPos2.getId(),4);
-        mPos3 = mMap.addMarker(new MarkerOptions().position(pos3).title("ともきの女子トイレ").snippet("現在地からの距離:5kmぐらい"));
-        mPos3.setTag(0);
-        marker_explanation.put(mPos3.getId(),"超くさいよ！");
-        marker_total_collect.put(mPos3.getId(),5000);
-        marker_total_wrong.put(mPos3.getId(),3);
+                ArrayList<Marker> spot_data = new ArrayList<Marker>();
 
-        //動作不安定のためコメントアウト中
-        /*//現在地取得の許可が降りているかを確認
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
-                == PackageManager.PERMISSION_GRANTED) {
-            this.locationManager = (LocationManager)this.getSystemService(Context.LOCATION_SERVICE);
+                Marker m;
+                LatLng l = null;
+                String t = "";
+                String ex = "";
+                int collect = 0;
+                int wrong = 0;
 
-            //現在地の緯度、経度を取得
-            this.locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0,
-                    new LocationListener(){
-                        @Override
-                        public void onLocationChanged(Location location) {
-                            Log.v("Main",String.format("Current Locatin is %s,%s",
-                                    String.valueOf(location.getLatitude()),
-                                    String.valueOf(location.getLongitude())));
-                        }
-
-                        @Override
-                        public void onProviderDisabled(String provider) {
-                            Log.v("Main","onProviderDisabled");
-                        }
-
-                        @Override
-                        public void onProviderEnabled(String provider) {
-                            Log.v("Main","onProviderEnabled");
-                        }
-
-                        @Override
-                        public void onStatusChanged(String provider,
-                                                    int status, Bundle extras) {
-                            Log.v("Main","onStatusChanged");
-                        }
+                for(int i=0;i<result.length();i++){
+                    try {
+                        l = new LatLng(result.getJSONObject(i).getDouble("latitude"),result.getJSONObject(i).getDouble("longitude"));
+                        t = result.getJSONObject(i).getString("name");
+                        ex = result.getJSONObject(i).getString("explanation");
+                        collect = result.getJSONObject(i).getInt("true_number");
+                        wrong = result.getJSONObject(i).getInt("false_number");
+                    }catch(JSONException e){
+                        Log.i("addmarker","例外発生"+e);
                     }
-            );
-            this.myLocate = this.locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-            this.mylatitude = this.myLocate.getLatitude();
-            this.mylongitude = this.myLocate.getLongitude();
+                    m = mMap.addMarker(new MarkerOptions().position(l).title(t));
+                    marker_explanation.put(m.getId(),ex);
+                    marker_total_collect.put(m.getId(),collect);
+                    marker_total_wrong.put(m.getId(),wrong);
 
-            mMap.setMyLocationEnabled(true);
-        } else {
-            //不許可時の処理を記す
-            // Show rationale and request permission.
-        }*/
+                    spot_data.add(m);
+
+                }
+
+            }
+        });
+
+        json1.rereadVolley();
+
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
             mMap.setMyLocationEnabled(true);
@@ -180,14 +150,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.setOnInfoWindowClickListener(this);
 
     }
-
-    float getDistance(LatLng target){
-        float[] results = new float[1];
-        Location.distanceBetween(this.mylatitude,this.mylongitude,target.latitude,target.longitude,results);
-        return results[0];
-    }
-
-
 
     @Override
     public void onInfoWindowClick(Marker marker){
@@ -211,5 +173,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     {
         Log.i("MainActivity : ", "OK clicked.");
     }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if(keyCode == KeyEvent.KEYCODE_BACK) {
+            // 戻るボタンの処理
+            Intent intent = new Intent(MapsActivity.this, MainActivity.class);
+            startActivity(intent);
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
 
 }

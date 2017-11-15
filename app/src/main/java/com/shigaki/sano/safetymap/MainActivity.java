@@ -36,27 +36,13 @@ import java.net.URL;
 
 public class MainActivity extends Activity {
 
-    TextView textView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
 
-        ReadJson json1 = new ReadJson();
 
-        json1.setOnCallBack(new ReadJson.CallBackTask() {
-            @Override
-            public void CallBack(JSONArray result) {
-                super.CallBack(result);
-                // resultにはdoInBackgroundの返り値が入ります。
-                // ここからAsyncTask処理後の処理を記述します。
-                Log.i("AsyncTaskCallback", "非同期処理が終了しました。");
-            }
-        });
-
-        json1.rereadVolley();
 
         Button button_open_map = findViewById(R.id.button_open_map);
         button_open_map.setOnClickListener(new View.OnClickListener() {

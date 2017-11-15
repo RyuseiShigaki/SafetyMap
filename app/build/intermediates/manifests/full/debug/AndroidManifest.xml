@@ -57,6 +57,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.shigaki.sano.safetymap.AddPlaceActivity" />
+        <activity android:name="com.shigaki.sano.safetymap.SortDistanceActivity" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

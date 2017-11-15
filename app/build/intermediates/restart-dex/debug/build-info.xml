@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="25"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="21"
     build-mode="COLD"
-    density="420dpi"
+    density="xhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1510648747864"
+    timestamp="1510713675104"
     token="-4834967928783575264"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="102" />
+        duration="521" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="49" />
+        duration="23" />
     <task
         name="verifier"
-        duration="8" />
+        duration="2" />
 
     <artifact
         location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
         type="SPLIT" />
+    <artifact
+        location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/outputs/apk/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1510645269127"
+        timestamp="1510709700115"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
@@ -70,7 +73,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1510645945840"
+        timestamp="1510713440906"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/outputs/apk/app-debug.apk"
@@ -78,11 +81,14 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1510648747864"
+        timestamp="1510713675104"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
+        <artifact
+            location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>
