@@ -65,8 +65,8 @@ public class AddPlaceActivity extends AppCompatActivity {
                     Toast.makeText(safetymap.getAppContext(),"経度を入力してください。",Toast.LENGTH_SHORT).show();
                 }else if(!((Double.parseDouble(latdata)>=-90)&&(Double.parseDouble(latdata)<=90))||!((Double.parseDouble(lngdata)>=-180)&&(Double.parseDouble(lngdata)<=180))) {
                     Toast.makeText(safetymap.getAppContext(),"緯度・経度が不正です。",Toast.LENGTH_SHORT).show();
-                }else if(namedata.length()>20){
-                    Toast.makeText(safetymap.getAppContext(),"名前は20文字までです。",Toast.LENGTH_SHORT).show();
+                }else if(namedata.length()>50){
+                    Toast.makeText(safetymap.getAppContext(),"名前は50文字までです。",Toast.LENGTH_SHORT).show();
                 }else if(namedata.length()==0){
                     Toast.makeText(safetymap.getAppContext(),"名前を入力してください。",Toast.LENGTH_SHORT).show();
                 }else if(expdata.length()==0){

@@ -6,27 +6,40 @@
     density="xhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1510841803888"
+    timestamp="1510843078621"
     token="-4834967928783575264"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="247" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="11" />
     <task
         name="verifier"
         duration="0" />
 
+    <artifact
+        location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/outputs/apk/app-debug.apk"
+        type="SPLIT_MAIN" />
+
     <build
         build-mode="FULL"
-        timestamp="1510841587872"
+        timestamp="1510842785402"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
         <artifact
             location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />
@@ -37,9 +50,6 @@
             location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
             location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
@@ -47,9 +57,6 @@
             type="SPLIT" />
         <artifact
             location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
             location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
@@ -66,7 +73,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1510841766753"
+        timestamp="1510842997534"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/outputs/apk/app-debug.apk"
@@ -74,7 +81,14 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1510841803888"
-        verifier="COLD_SWAP_REQUESTED" />
+        timestamp="1510843078621"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/shigashan/AndroidStudioProjects/safetymap/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
 
 </instant-run>

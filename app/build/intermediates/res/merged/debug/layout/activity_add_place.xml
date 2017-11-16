@@ -51,6 +51,14 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="公共の場所でないなら、名前欄に住所も入力してください。"
+            android:textSize="12sp" />
+
+        <TextView
             android:id="@+id/apptitle"
             android:layout_width="369dp"
             android:layout_height="wrap_content"

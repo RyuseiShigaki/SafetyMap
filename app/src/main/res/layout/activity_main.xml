@@ -42,7 +42,7 @@
         android:layout_height="270dp"
         android:layout_gravity="center"
         android:background="#0090ff"
-        android:text="最寄りの避難所検索"
+        android:text="最寄りの避難スポット&#xA;検索"
         android:textColor="#ffffff"
         android:textSize="34sp"
         tools:layout_editor_absoluteX="39dp"

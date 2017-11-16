@@ -1,4 +1,4 @@
-#Thu Nov 16 23:16:07 JST 2017
+#Thu Nov 16 23:34:20 JST 2017
 base.0=/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0ffa17b1c1fa52ba9db1a47a34256f6a844346a4
 renamed.1=classes.dex
 renamed.0=classes2.dex
