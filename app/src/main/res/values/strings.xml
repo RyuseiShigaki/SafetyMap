@@ -1,9 +1,4 @@
 <resources>
-    <string name="app_name">SafetyMap</string>
+    <string name="app_name">合志安全マップ</string>
     <string name="title_activity_maps">Map</string>
-    <string name="marker_title">%1$s</string>
-    <string name="total_collect">5件</string>
-    <string name="total_wrong">3件</string>
-    <string name="test">テスト「 %1$s 」</string>
-    <string name="password">Asdfreply6</string>
 </resources>

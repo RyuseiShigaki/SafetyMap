@@ -2,6 +2,87 @@
 <items version="2" >
 
     <item
+        is-multidex="false"
+        jar="/home/shigashan/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/a8f23f65fc1e522ee4a1a697ee569901a46741fa/library-1.0.19.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/library-1.0.19_506dbc92366850e3aab09c5a54275ca564f5f3a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/.android/build-cache/c4e87ac9058fb45b4a5dd4380e296e7a70e32532/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a71be5f29a1c1e3fd3e84472742668f101a5b936">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/classes_6e5bc334335fe7e5546bb37cad80fd0c1909f865.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/.android/build-cache/21a87140f704e11afe3948d67f70abc172338f63/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="db939a450ea2a721db84e774bf108e20c44a8a1d">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/classes_eec39a75a1b689c1e3a95f4e222bd39ce1ebde06.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/.android/build-cache/986779f7759050a9f63f758c137aac10c345a3fa/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/classes_640dc80add7ea7c03716c54caf3429d6d3efb186.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/.android/build-cache/22a67a53b55df3060927a696b2f8f2f24845a7a3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/classes_7a3c28ee605a1ed54e0b62dfa0d782abf46e20aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1_e7d621e52288fa0e758362a8c316877cd9430a12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/.android/build-cache/0bf5702f5155b573667644e2ae0d8bbae52a8c4e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="86baa7d1051901fc1b8e7f596732f71f32175bde">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/classes_415b5cacb17c0d9abed1d1a250f50c8ff557444b.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d2550af6984900dfebc7e756c1904d1472e2109d">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0ffa17b1c1fa52ba9db1a47a34256f6a844346a4/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/.android/build-cache/01427de5bc99a4a8c2c74452feea8069e8b3387a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/classes_324c9ae3817060399f6891e9a0450ef967bcfc87.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
@@ -11,13 +92,103 @@
         <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c319cd2c8fc74a622065a838d1fbeab851524f3a/classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/shigashan/.android/build-cache/8346fe32f33fc736dcc691d388f1de2e6c11b1ae/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="d3666cf934d28720b08fbec98652042ccd8aad4c">
-        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0ffa17b1c1fa52ba9db1a47a34256f6a844346a4/classes.dex" />
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/classes_2034825f97ca58529b86b2e4d22a2d98146562c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/.android/build-cache/2bbcfc7d663cbdb95fd60b2a5eb6a928c6930571/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/classes_366700101c0bac0e285bb1f6d1468e20298e4f4f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/.android/build-cache/65f74b738fb6ab3353bee7a352315dcbebecf8bc/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/classes_24f68dd2ecf57f871a4db32b507c15b8c3137ed3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/.gradle/caches/modules-2/files-2.1/cz.msebera.android/httpclient/4.3.6/526a9f794eab830eae4f23a62c572878b3f491ab/httpclient-4.3.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/httpclient-4.3.6_a34fc6c29a34559a5486e2d58d57d82c2cd5caf2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/classes_364a3e9d449781be8c836410a063554c1afb64f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.9/386a4339ffe52d5d63e80f9bed8d2b1d1a418249/android-async-http-1.4.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.9_80813006a2b04cd6cfbcae9981f7ab91c68df5ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/.android/build-cache/1818ded6443bae2ffd9794cad0962a2239980b17/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/classes_b3a0b76438acc8523db26b5a7fc962e74ecadcd9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/.android/build-cache/056f65b969e16fe904ebf23f6ecf817bb69b6bdd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/classes_13006a866a582e4b08702d5e2fd066237905d241.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_2a0579b881b1b18cad2885e196db8cd7cd41c7fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/.android/build-cache/3bf7544bec99ae5388ab0fc324ac2ea23a47c94f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2a2d9cd43adbe7599a78f2293273a77881c1909a">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/classes_6f6847175b06b28aaec7a0cd95a9215a587a24c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/shigashan/.android/build-cache/b51ee75a7cca26a390092dbf3ab4381428bf7918/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/pre-dexed/debug/classes_5c419f13d965ed4d54f29c13a1c65d3b9a6ed627.jar" />
     </item>
 
 </items>

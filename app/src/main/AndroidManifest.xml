@@ -14,7 +14,7 @@
         android:name=".safetymap"
         android:allowBackup="true"
         android:icon="@mipmap/safety_icon"
-        android:label="@string/app_name"
+        android:label="2017_15_合志安全マップ"
         android:roundIcon="@mipmap/safety_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">

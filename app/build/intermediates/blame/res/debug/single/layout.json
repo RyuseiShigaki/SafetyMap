@@ -72,6 +72,10 @@
         "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/layout/select_dialog_multichoice_material.xml"
     },
     {
+        "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/layout/progress_bar.xml",
+        "source": "/home/shigashan/AndroidStudioProjects/safetymap/app/src/main/res/layout/progress_bar.xml"
+    },
+    {
         "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
         "source": "/home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/res/layout/abc_action_mode_bar.xml"
     },

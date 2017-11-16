@@ -42,12 +42,6 @@ public class MainActivity extends Activity {
 
         setContentView(R.layout.activity_main);
 
-        //LoadLocation l1=new LoadLocation();
-        //l1.loadstart();
-
-
-
-
         Button button_open_map = findViewById(R.id.button_open_map);
         button_open_map.setOnClickListener(new View.OnClickListener() {
             @Override

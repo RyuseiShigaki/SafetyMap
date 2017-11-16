@@ -2,8 +2,11 @@ package com.shigaki.sano.safetymap;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -16,6 +19,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.widget.Toast;
 
 import static android.content.Context.LOCATION_SERVICE;
@@ -25,83 +29,83 @@ import static android.content.Context.LOCATION_SERVICE;
  */
 
 public class LoadLocation extends AppCompatActivity implements LocationListener {
-    double latitude=0;
-    double longitude=0;
-    LocationManager locationManager;
+    double lat;
+    double lon;
 
-    public void loadstart() {
+    private CallBackTask callbacktask;
 
-        // Fine か Coarseのいずれかのパーミッションが得られているかチェックする
-        // 本来なら、Android6.0以上かそうでないかで実装を分ける必要がある
-        if (ActivityCompat.checkSelfPermission(safetymap.getAppContext(),Manifest.permission.ACCESS_FINE_LOCATION)  != PackageManager.PERMISSION_GRANTED
-                && ActivityCompat.checkSelfPermission(safetymap.getAppContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+    public void loadStart() {
 
-            /** fine location のリクエストコード（値は他のパーミッションと被らなければ、なんでも良い）*/
-            final int requestCode = 7;
+       LocationManager mLocationManager =
+                 (LocationManager) safetymap.getAppContext().getSystemService(this.LOCATION_SERVICE);
 
-            // いずれも得られていない場合はパーミッションのリクエストを要求する
-            ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, requestCode );
-            return;
-        }
+        // Criteriaオブジェクトを生成
+        Criteria criteria = new Criteria();
 
-        // 位置情報を管理している LocationManager のインスタンスを生成する
-        LocationManager locationManager = (LocationManager) safetymap.getAppContext().getSystemService(LOCATION_SERVICE);
-        String locationProvider = null;
+        // Accuracyを指定(低精度)
+        criteria.setAccuracy(Criteria.ACCURACY_COARSE);
 
-        // GPSが利用可能になっているかどうかをチェック
-        if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-            locationProvider = LocationManager.GPS_PROVIDER;
-        }
-        // GPSプロバイダーが有効になっていない場合は基地局情報が利用可能になっているかをチェック
-        else if (locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
-            locationProvider = LocationManager.NETWORK_PROVIDER;
-        }
-        // いずれも利用可能でない場合は、GPSを設定する画面に遷移する
-        else {
-            Intent settingsIntent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
-            startActivity(settingsIntent);
-            return;
-        }
+        // PowerRequirementを指定(低消費電力)
+        criteria.setPowerRequirement(Criteria.POWER_LOW);
 
-        /** 位置情報の通知するための最小時間間隔（ミリ秒） */
-        final long minTime = 500;
-        /** 位置情報を通知するための最小距離間隔（メートル）*/
-        final long minDistance = 1;
+        // ロケーションプロバイダの取得
+        String provider = mLocationManager.getBestProvider(criteria, true);
 
-        // 利用可能なロケーションプロバイダによる位置情報の取得の開始
-        // FIXME 本来であれば、リスナが複数回登録されないようにチェックする必要がある
-        locationManager.requestLocationUpdates(locationProvider, minTime, minDistance, this);
-        // 最新の位置情報
-        Location location = locationManager.getLastKnownLocation(locationProvider);
+        // 取得したロケーションプロバイダを表示
+        // TextView tv_provider = (TextView) findViewById(R.id.Provider);
+        // tv_provider.setText("Provider: " + provider);
 
-        if (location != null) {
-            Log.i("geeeet",String.valueOf( "onCreate() : " + location.getLatitude()) + "," + String.valueOf(location.getLongitude()));
+        // LocationListenerを登録
+        if (provider != null) {
+            mLocationManager.requestLocationUpdates(provider,0, 0, this);
         }
 
     }
 
-    //位置情報が通知されるたびにコールバックされるメソッド
     @Override
-    public void onLocationChanged(Location location){
-        Log.i("geeeet",String.valueOf( "onLocationChanged() : " + location.getLatitude()) + "," + String.valueOf(location.getLongitude()));
+    public void onLocationChanged(Location location) {
+        // 緯度の表示
+
+        Log.i("locatioon","Latitude:"+location.getLatitude());
+
+        // 経度の表示
+
+        Log.i("locatiooon","Latitude:"+location.getLongitude());
+
+        lat = location.getLatitude();
+        lon = location.getLongitude();
+        callbacktask.CallBack(lat,lon);
+
+
     }
 
-    //ロケーションプロバイダが利用不可能になるとコールバックされるメソッド
     @Override
     public void onProviderDisabled(String provider) {
-        //ロケーションプロバイダーが使われなくなったらリムーブする必要がある
+        // TODO Auto-generated method stub
+
     }
 
-    //ロケーションプロバイダが利用可能になるとコールバックされるメソッド
     @Override
     public void onProviderEnabled(String provider) {
-        //プロバイダが利用可能になったら呼ばれる
+        // TODO Auto-generated method stub
+
     }
 
-    //ロケーションステータスが変わるとコールバックされるメソッド
     @Override
     public void onStatusChanged(String provider, int status, Bundle extras) {
-        // 利用可能なプロバイダの利用状態が変化したときに呼ばれる
+        // TODO Auto-generated method stub
+
     }
+
+    public void setOnCallBack(CallBackTask _cbj) {
+        callbacktask = _cbj;
+    }
+
+    public static class CallBackTask {
+        public void CallBack(double lat,double lng) {
+        }
+    }
+
+
 
 }

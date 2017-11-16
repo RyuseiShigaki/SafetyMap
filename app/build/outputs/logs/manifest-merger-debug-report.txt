@@ -39,7 +39,7 @@ MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/shigashan/
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/shigashan/.android/build-cache/b51ee75a7cca26a390092dbf3ab4381428bf7918/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/shigashan/.android/build-cache/8346fe32f33fc736dcc691d388f1de2e6c11b1ae/output/AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:17:9-41
+		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:17:9-40
 	android:supportsRtl
 		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:19:9-35
 	android:roundIcon

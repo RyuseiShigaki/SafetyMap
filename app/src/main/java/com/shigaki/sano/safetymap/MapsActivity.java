@@ -98,7 +98,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // 各マーカーの座標
-        LatLng kosen = new LatLng(32.876904, 130.7479490);
+        LatLng koshi = new LatLng(32.886034, 130.789461);
 
         json1.setOnCallBack(new ReadJson.CallBackTask() {
             @Override
@@ -145,7 +145,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.setMyLocationEnabled(true);
         }
         //センターカメラの移動
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(kosen, 17));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(koshi, 12));
 
         mMap.setOnInfoWindowClickListener(this);
 

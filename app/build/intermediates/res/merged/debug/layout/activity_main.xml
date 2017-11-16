@@ -1,80 +1,79 @@
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1"
     tools:context="com.shigaki.sano.safetymap.MainActivity"
-    tools:layout_editor_absoluteY="0dp"
-    tools:layout_editor_absoluteX="0dp">
+    tools:layout_editor_absoluteX="-5dp"
+    tools:layout_editor_absoluteY="-10dp">
+
+
+    <TextView
+        android:id="@+id/apptitle"
+        android:layout_width="369dp"
+        android:layout_height="108dp"
+
+
+        android:layout_gravity="center"
+        android:background="#0070ff"
+        android:paddingTop="40dp"
+        android:text="合志安全マップ"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="44sp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#0070ff"
+        android:gravity="center_horizontal"
+        android:text="NIT Kumamoto Campus"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/search_near_spot"
+        android:layout_width="369dp"
+        android:layout_height="270dp"
+        android:layout_gravity="center"
+        android:background="#0090ff"
+        android:text="最寄りの避難所検索"
+        android:textColor="#ffffff"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="168dp" />
 
     <LinearLayout
-        android:layout_width="395dp"
-        android:layout_height="587dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:orientation="vertical"
-        android:weightSum="1"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="-10dp">
-
-
-        <TextView
-            android:id="@+id/apptitle"
-            android:layout_width="369dp"
-            android:layout_height="130dp"
-
-
-            android:layout_weight="0.52"
-            android:background="#0070ff"
-            android:paddingRight="20dp"
-            android:paddingTop="40dp"
-            android:text="合志安全マップ"
-            android:textAlignment="center"
-            android:textColor="#ffffff"
-            android:textSize="44sp"
-            tools:layout_editor_absoluteX="51dp"
-            tools:layout_editor_absoluteY="45dp" />
+        android:orientation="horizontal">
 
         <Button
-            android:id="@+id/search_near_spot"
-            android:layout_width="369dp"
-            android:layout_height="270dp"
-            android:layout_weight="0.09"
-            android:background="#0090ff"
-            android:text="最寄りの避難所検索"
+            android:id="@+id/add_user_spot"
+            android:layout_width="180dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:background="#00aaff"
+            android:text="避難スポットを&#xA;追加"
             android:textColor="#ffffff"
-            android:textSize="34sp"
-            tools:layout_editor_absoluteX="39dp"
-            tools:layout_editor_absoluteY="168dp" />
+            android:textSize="24sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="1">
-
-            <Button
-                android:id="@+id/add_user_spot"
-                android:layout_width="wrap_content"
-                android:layout_height="207dp"
-                android:layout_weight="0.31"
-                android:background="#00aaff"
-                android:text="避難スポットを&#xA;追加"
-                android:textColor="#ffffff"
-                android:textSize="24sp" />
-
-            <Button
-                android:id="@+id/button_open_map"
-                android:layout_width="160dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.30"
-                android:background="#00bbff"
-                android:elevation="0dp"
-                android:text="マップを開く"
-                android:textColor="#ffffff"
-                android:textSize="20sp" />
-
-        </LinearLayout>
+        <Button
+            android:id="@+id/button_open_map"
+            android:layout_width="180dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:background="#00bbff"
+            android:text="マップを開く"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

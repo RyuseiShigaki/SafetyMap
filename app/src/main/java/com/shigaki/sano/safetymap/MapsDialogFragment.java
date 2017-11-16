@@ -6,6 +6,7 @@ import android.app.Dialog;
 import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,6 +54,7 @@ public class MapsDialogFragment extends DialogFragment
         //ボタンの読み込み
         Button button_collect = dialogView.findViewById(R.id.button_collect);
         Button button_wrong = dialogView.findViewById(R.id.button_wrong);
+        Button root_button = dialogView.findViewById(R.id.root_button);
 
         //ボタンリスナーセット
         button_collect.setOnClickListener(new View.OnClickListener() {
@@ -72,6 +74,16 @@ public class MapsDialogFragment extends DialogFragment
                 UpdateNumber setWrong = new UpdateNumber(getArguments().getString("title"),"wrong");
                 setWrong.rereadVolley();
                 Intent intent = new Intent(getActivity(), MapsActivity.class);
+                startActivity(intent);
+            }
+        });
+        root_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                intent.setData(Uri.parse("http://maps.google.com/maps?saddr=" + "現在地" + "&daddr=" + getArguments().getString("title") + "&dirflg=" + "w"));
                 startActivity(intent);
             }
         });

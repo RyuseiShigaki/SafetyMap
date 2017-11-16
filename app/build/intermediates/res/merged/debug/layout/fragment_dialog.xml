@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="タイトル"
         android:textColor="@android:color/holo_blue_dark"
@@ -33,18 +33,18 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:background="@android:color/holo_blue_dark" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/text_question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="この情報は正しいですか？"
             android:textColor="@android:color/holo_blue_dark" />
@@ -111,5 +111,25 @@
 
         </LinearLayout>
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/root_button"
+        android:layout_width="112dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="経路案内を表示"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="経路案内に移動後、戻りたいときは端末の戻るボタンを押してください。"
+        android:textSize="9sp" />
 
 </LinearLayout>

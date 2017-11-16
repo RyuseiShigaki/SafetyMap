@@ -15,4 +15,12 @@
         android:layout_height="match_parent"
         tools:context="com.shigaki.sano.safetymap.MapsActivity" />
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="マーカーをタップすると名前が表示されます。&#xA;更に吹き出しをタップすると詳細が表示されます。&#xA;変なマーカーがあったら管理者側で削除します。"
+        android:textSize="13sp" />
+
 </FrameLayout>
