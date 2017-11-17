@@ -4,11 +4,23 @@
         "source": "/home/shigashan/AndroidStudioProjects/safetymap/app/src/main/res/mipmap-xxhdpi/safety_icon.png"
     },
     {
+        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/safety_icon.png",
+        "source": "/home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/res/mipmap-xxhdpi/safety_icon.png"
+    },
+    {
         "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher_round.png",
         "source": "/home/shigashan/AndroidStudioProjects/safetymap/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
         "source": "/home/shigashan/AndroidStudioProjects/safetymap/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher_round.png",
+        "source": "/home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     }
 ]

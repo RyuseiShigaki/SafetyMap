@@ -1,150 +1,155 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:2:1-48:12
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:2:1-50:12
 	package
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:3:5-41
-		INJECTED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
-		INJECTED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:3:5-41
+		INJECTED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
+		INJECTED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
-		INJECTED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
+		INJECTED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
+		INJECTED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
-		INJECTED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
+		INJECTED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
+		INJECTED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:10:5-79
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:10:22-76
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:10:22-76
 uses-permission#android.permission.INTERNET
-ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:11:5-67
-MERGED from [com.google.android.gms:play-services-maps:11.0.2] /home/shigashan/.android/build-cache/21a87140f704e11afe3948d67f70abc172338f63/output/AndroidManifest.xml:20:5-66
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.0.2] /home/ubuntu/.android/build-cache/c5faee5188e4d4d266cb6b5572b81242fbd87b3d/output/AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:11:22-64
-application
-ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:13:5-46:19
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/shigashan/.android/build-cache/22a67a53b55df3060927a696b2f8f2f24845a7a3/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/shigashan/.android/build-cache/1818ded6443bae2ffd9794cad0962a2239980b17/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/shigashan/.android/build-cache/65f74b738fb6ab3353bee7a352315dcbebecf8bc/output/AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-maps:11.0.2] /home/shigashan/.android/build-cache/21a87140f704e11afe3948d67f70abc172338f63/output/AndroidManifest.xml:24:5-19
-MERGED from [com.google.android.gms:play-services-base:11.0.2] /home/shigashan/.android/build-cache/3bf7544bec99ae5388ab0fc324ac2ea23a47c94f/output/AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-tasks:11.0.2] /home/shigashan/.android/build-cache/0bf5702f5155b573667644e2ae0d8bbae52a8c4e/output/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:11.0.2] /home/shigashan/.android/build-cache/c4e87ac9058fb45b4a5dd4380e296e7a70e32532/output/AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/shigashan/.android/build-cache/01427de5bc99a4a8c2c74452feea8069e8b3387a/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/shigashan/.android/build-cache/2bbcfc7d663cbdb95fd60b2a5eb6a928c6930571/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/shigashan/.android/build-cache/986779f7759050a9f63f758c137aac10c345a3fa/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/shigashan/.android/build-cache/056f65b969e16fe904ebf23f6ecf817bb69b6bdd/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/shigashan/.android/build-cache/b51ee75a7cca26a390092dbf3ab4381428bf7918/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/shigashan/.android/build-cache/8346fe32f33fc736dcc691d388f1de2e6c11b1ae/output/AndroidManifest.xml:29:5-20
-	android:label
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:17:9-40
-	android:supportsRtl
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:19:9-35
-	android:roundIcon
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:18:9-48
-	android:allowBackup
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:15:9-35
-	android:icon
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:16:9-43
-	android:theme
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:20:9-40
-	android:name
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:14:9-34
-meta-data#com.google.android.geo.API_KEY
-ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:30:9-32:55
-	android:value
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:32:13-52
-	android:name
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:31:13-58
-activity#com.shigaki.sano.safetymap.MapsActivity
-ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:34:9-36:59
-	android:label
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:36:13-56
-	android:name
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:35:13-41
-activity#com.shigaki.sano.safetymap.MainActivity
-ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:37:9-43:20
-	android:name
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:37:19-47
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:38:13-42:29
-action#android.intent.action.MAIN
-ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:39:17-69
-	android:name
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:39:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:41:17-77
-	android:name
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:41:27-74
-activity#com.shigaki.sano.safetymap.AddPlaceActivity
-ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:44:9-54
-	android:name
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:44:19-51
-activity#com.shigaki.sano.safetymap.SortDistanceActivity
-ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:45:9-67
-	android:name
-		ADDED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:45:19-55
-uses-sdk
-INJECTED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/shigashan/.android/build-cache/22a67a53b55df3060927a696b2f8f2f24845a7a3/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/shigashan/.android/build-cache/1818ded6443bae2ffd9794cad0962a2239980b17/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/shigashan/.android/build-cache/65f74b738fb6ab3353bee7a352315dcbebecf8bc/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-maps:11.0.2] /home/shigashan/.android/build-cache/21a87140f704e11afe3948d67f70abc172338f63/output/AndroidManifest.xml:23:5-43
-MERGED from [com.google.android.gms:play-services-base:11.0.2] /home/shigashan/.android/build-cache/3bf7544bec99ae5388ab0fc324ac2ea23a47c94f/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tasks:11.0.2] /home/shigashan/.android/build-cache/0bf5702f5155b573667644e2ae0d8bbae52a8c4e/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:11.0.2] /home/shigashan/.android/build-cache/c4e87ac9058fb45b4a5dd4380e296e7a70e32532/output/AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/shigashan/.android/build-cache/01427de5bc99a4a8c2c74452feea8069e8b3387a/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/shigashan/.android/build-cache/2bbcfc7d663cbdb95fd60b2a5eb6a928c6930571/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/shigashan/.android/build-cache/986779f7759050a9f63f758c137aac10c345a3fa/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/shigashan/.android/build-cache/056f65b969e16fe904ebf23f6ecf817bb69b6bdd/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/shigashan/.android/build-cache/b51ee75a7cca26a390092dbf3ab4381428bf7918/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/shigashan/.android/build-cache/8346fe32f33fc736dcc691d388f1de2e6c11b1ae/output/AndroidManifest.xml:21:5-23:58
-	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/AndroidManifest.xml:23:9-75
-	android:targetSdkVersion
-		INJECTED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
-		INJECTED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
-	android:minSdkVersion
-		INJECTED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
-		INJECTED from /home/shigashan/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
-meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/shigashan/.android/build-cache/22a67a53b55df3060927a696b2f8f2f24845a7a3/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/shigashan/.android/build-cache/1818ded6443bae2ffd9794cad0962a2239980b17/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/shigashan/.android/build-cache/01427de5bc99a4a8c2c74452feea8069e8b3387a/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/shigashan/.android/build-cache/2bbcfc7d663cbdb95fd60b2a5eb6a928c6930571/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/shigashan/.android/build-cache/986779f7759050a9f63f758c137aac10c345a3fa/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/shigashan/.android/build-cache/056f65b969e16fe904ebf23f6ecf817bb69b6bdd/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/shigashan/.android/build-cache/b51ee75a7cca26a390092dbf3ab4381428bf7918/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/shigashan/.android/build-cache/8346fe32f33fc736dcc691d388f1de2e6c11b1ae/output/AndroidManifest.xml:25:5-27:41
-	android:value
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/AndroidManifest.xml:27:9-38
-	android:name
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/shigashan/.android/build-cache/7b756efb9d19df6cf1cab2478bf34aca2b96d29b/output/AndroidManifest.xml:26:9-47
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:11:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:11.0.2] /home/shigashan/.android/build-cache/21a87140f704e11afe3948d67f70abc172338f63/output/AndroidManifest.xml:19:5-78
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:12:5-79
+MERGED from [com.google.android.gms:play-services-maps:11.0.2] /home/ubuntu/.android/build-cache/c5faee5188e4d4d266cb6b5572b81242fbd87b3d/output/AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:11.0.2] /home/shigashan/.android/build-cache/21a87140f704e11afe3948d67f70abc172338f63/output/AndroidManifest.xml:19:22-76
-uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:11.0.2] /home/shigashan/.android/build-cache/21a87140f704e11afe3948d67f70abc172338f63/output/AndroidManifest.xml:21:5-77
-	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:11.0.2] /home/shigashan/.android/build-cache/21a87140f704e11afe3948d67f70abc172338f63/output/AndroidManifest.xml:21:19-51
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:11.0.2] /home/shigashan/.android/build-cache/21a87140f704e11afe3948d67f70abc172338f63/output/AndroidManifest.xml:21:52-75
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.0.2] /home/shigashan/.android/build-cache/3bf7544bec99ae5388ab0fc324ac2ea23a47c94f/output/AndroidManifest.xml:19:9-172
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.0.2] /home/shigashan/.android/build-cache/3bf7544bec99ae5388ab0fc324ac2ea23a47c94f/output/AndroidManifest.xml:19:146-170
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:12:22-76
+application
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:14:5-48:19
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/ubuntu/.android/build-cache/832b89ca8b6dcb623a74d0168c545e050532142f/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/ubuntu/.android/build-cache/3602b3f52473e84c9df5d0f162f26ce10f98a4b1/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/ubuntu/.android/build-cache/ef2727012cfc361c8a553d74043f3d0bd3f14340/output/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-maps:11.0.2] /home/ubuntu/.android/build-cache/c5faee5188e4d4d266cb6b5572b81242fbd87b3d/output/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:11.0.2] /home/ubuntu/.android/build-cache/57bb4013162d77d34063d8ecc2be0b0d5f947b7c/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.2] /home/ubuntu/.android/build-cache/38dd08bdf153cc0f1409b82b5aceac60187ebb6c/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.2] /home/ubuntu/.android/build-cache/d400d92aa1a7bec5cc0b3cf18d76b6e8ed5f7627/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/ubuntu/.android/build-cache/46d77018e33f8394379c63dbc1a259e03ac8aef1/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/ubuntu/.android/build-cache/952650acda41e0ae2979a39eaf977c949843293f/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/ubuntu/.android/build-cache/9fc69b8509dee08c37eac7374e501c021eb26def/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/ubuntu/.android/build-cache/c29b5e31f233063c8999ee6ace1ece8db197251e/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/ubuntu/.android/build-cache/db43737df67a32c50083cd3c69ba5e4ac6e1eaee/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/ubuntu/.android/build-cache/995555924a8c6efc1daead7cb16eb5fb77d8f0e4/output/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:18:9-40
+	android:supportsRtl
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:20:9-35
+	android:roundIcon
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:19:9-48
+	android:allowBackup
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:16:9-35
+	android:icon
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:17:9-43
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.0.2] /home/shigashan/.android/build-cache/3bf7544bec99ae5388ab0fc324ac2ea23a47c94f/output/AndroidManifest.xml:19:86-145
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:21:9-40
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.0.2] /home/shigashan/.android/build-cache/3bf7544bec99ae5388ab0fc324ac2ea23a47c94f/output/AndroidManifest.xml:19:19-85
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:11.0.2] /home/shigashan/.android/build-cache/c4e87ac9058fb45b4a5dd4380e296e7a70e32532/output/AndroidManifest.xml:20:9-121
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:15:9-34
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:31:9-33:55
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:11.0.2] /home/shigashan/.android/build-cache/c4e87ac9058fb45b4a5dd4380e296e7a70e32532/output/AndroidManifest.xml:20:66-119
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:33:13-52
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:11.0.2] /home/shigashan/.android/build-cache/c4e87ac9058fb45b4a5dd4380e296e7a70e32532/output/AndroidManifest.xml:20:20-65
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:32:13-58
+activity#com.shigaki.sano.safetymap.MapsActivity
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:35:9-37:59
+	android:label
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:37:13-56
+	android:name
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:36:13-41
+activity#com.shigaki.sano.safetymap.MainActivity
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:38:9-44:20
+	android:name
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:38:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:39:13-43:29
+action#android.intent.action.MAIN
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:40:17-69
+	android:name
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:40:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:42:17-77
+	android:name
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:42:27-74
+activity#com.shigaki.sano.safetymap.AddPlaceActivity
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:45:9-54
+	android:name
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:45:19-51
+activity#com.shigaki.sano.safetymap.SortDistanceActivity
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:46:9-58
+	android:name
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:46:19-55
+activity#com.shigaki.sano.safetymap.DeleteSpotActivity
+ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:47:9-65
+	android:name
+		ADDED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml:47:19-53
+uses-sdk
+INJECTED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/ubuntu/.android/build-cache/832b89ca8b6dcb623a74d0168c545e050532142f/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/ubuntu/.android/build-cache/3602b3f52473e84c9df5d0f162f26ce10f98a4b1/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/ubuntu/.android/build-cache/ef2727012cfc361c8a553d74043f3d0bd3f14340/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-maps:11.0.2] /home/ubuntu/.android/build-cache/c5faee5188e4d4d266cb6b5572b81242fbd87b3d/output/AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.2] /home/ubuntu/.android/build-cache/57bb4013162d77d34063d8ecc2be0b0d5f947b7c/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.2] /home/ubuntu/.android/build-cache/38dd08bdf153cc0f1409b82b5aceac60187ebb6c/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.2] /home/ubuntu/.android/build-cache/d400d92aa1a7bec5cc0b3cf18d76b6e8ed5f7627/output/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/ubuntu/.android/build-cache/46d77018e33f8394379c63dbc1a259e03ac8aef1/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/ubuntu/.android/build-cache/952650acda41e0ae2979a39eaf977c949843293f/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/ubuntu/.android/build-cache/9fc69b8509dee08c37eac7374e501c021eb26def/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/ubuntu/.android/build-cache/c29b5e31f233063c8999ee6ace1ece8db197251e/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/ubuntu/.android/build-cache/db43737df67a32c50083cd3c69ba5e4ac6e1eaee/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/ubuntu/.android/build-cache/995555924a8c6efc1daead7cb16eb5fb77d8f0e4/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
+		INJECTED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
+		INJECTED from /home/ubuntu/AndroidStudioProjects/safetymap/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/ubuntu/.android/build-cache/832b89ca8b6dcb623a74d0168c545e050532142f/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/ubuntu/.android/build-cache/3602b3f52473e84c9df5d0f162f26ce10f98a4b1/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/ubuntu/.android/build-cache/46d77018e33f8394379c63dbc1a259e03ac8aef1/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/ubuntu/.android/build-cache/952650acda41e0ae2979a39eaf977c949843293f/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/ubuntu/.android/build-cache/9fc69b8509dee08c37eac7374e501c021eb26def/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/ubuntu/.android/build-cache/c29b5e31f233063c8999ee6ace1ece8db197251e/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/ubuntu/.android/build-cache/db43737df67a32c50083cd3c69ba5e4ac6e1eaee/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/ubuntu/.android/build-cache/995555924a8c6efc1daead7cb16eb5fb77d8f0e4/output/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ubuntu/.android/build-cache/e056d4939a6ef566f65a11a67872788cfada1a36/output/AndroidManifest.xml:26:9-47
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:11.0.2] /home/ubuntu/.android/build-cache/c5faee5188e4d4d266cb6b5572b81242fbd87b3d/output/AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:11.0.2] /home/ubuntu/.android/build-cache/c5faee5188e4d4d266cb6b5572b81242fbd87b3d/output/AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:11.0.2] /home/ubuntu/.android/build-cache/c5faee5188e4d4d266cb6b5572b81242fbd87b3d/output/AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.0.2] /home/ubuntu/.android/build-cache/57bb4013162d77d34063d8ecc2be0b0d5f947b7c/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.0.2] /home/ubuntu/.android/build-cache/57bb4013162d77d34063d8ecc2be0b0d5f947b7c/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.0.2] /home/ubuntu/.android/build-cache/57bb4013162d77d34063d8ecc2be0b0d5f947b7c/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.0.2] /home/ubuntu/.android/build-cache/57bb4013162d77d34063d8ecc2be0b0d5f947b7c/output/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.0.2] /home/ubuntu/.android/build-cache/d400d92aa1a7bec5cc0b3cf18d76b6e8ed5f7627/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.0.2] /home/ubuntu/.android/build-cache/d400d92aa1a7bec5cc0b3cf18d76b6e8ed5f7627/output/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.0.2] /home/ubuntu/.android/build-cache/d400d92aa1a7bec5cc0b3cf18d76b6e8ed5f7627/output/AndroidManifest.xml:20:20-65

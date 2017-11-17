@@ -41,35 +41,49 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        if(!(NetworkCheck.netWorkCheck(this.getApplicationContext()))) {
+            Toast.makeText(this, "インターネットに接続してください", Toast.LENGTH_SHORT).show();
+            finish();
+        }else {
+            setContentView(R.layout.activity_main);
 
-        Button button_open_map = findViewById(R.id.button_open_map);
-        button_open_map.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
-                startActivity(intent);
-            }
-        });
+            Button button_open_map = findViewById(R.id.button_open_map);
+            button_open_map.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+                    startActivity(intent);
+                }
+            });
 
-        Button add_user_spot = (Button) findViewById(R.id.add_user_spot);
-        add_user_spot.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, AddPlaceActivity.class);
-                startActivity(intent);
-            }
-        });
+            Button add_user_spot = (Button) findViewById(R.id.add_user_spot);
+            add_user_spot.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MainActivity.this, AddPlaceActivity.class);
+                    startActivity(intent);
+                }
+            });
 
-        Button search_near_spot = (Button) findViewById(R.id.search_near_spot);
-        search_near_spot.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SortDistanceActivity.class);
-                startActivity(intent);
-            }
-        });
+            Button search_near_spot = (Button) findViewById(R.id.search_near_spot);
+            search_near_spot.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MainActivity.this, SortDistanceActivity.class);
+                    startActivity(intent);
+                }
+            });
 
+            Button delete_spot = (Button)findViewById(R.id.button_hide);
+            delete_spot.setOnLongClickListener(new View.OnLongClickListener(){
+                @Override
+                public boolean onLongClick(View view){
+                    Intent intent = new Intent(MainActivity.this, DeleteSpotActivity.class);
+                    startActivity(intent);
+                    return true;
+                }
+            });
+        }
         
 
 
@@ -85,6 +99,15 @@ public class MainActivity extends Activity {
 
         }
         return super.onKeyDown(keyCode, event);
+    }
+
+    @Override
+    public void onRestart(){
+        super.onRestart();
+        if(!(NetworkCheck.netWorkCheck(this.getApplicationContext()))) {
+            Toast.makeText(this, "インターネットに接続してください", Toast.LENGTH_SHORT).show();
+            finish();
+        }
     }
 
 }

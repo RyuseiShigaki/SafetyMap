@@ -11,26 +11,21 @@
     tools:layout_editor_absoluteY="-10dp">
 
 
-    <TextView
-        android:id="@+id/apptitle"
+    <Button
+        android:id="@+id/button_hide"
         android:layout_width="369dp"
         android:layout_height="108dp"
-
-
-        android:layout_gravity="center"
         android:background="#0070ff"
         android:paddingTop="40dp"
         android:text="合志安全マップ"
         android:textAlignment="center"
-        android:textColor="#ffffff"
-        android:textSize="44sp"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="45dp" />
+        android:textColor="@android:color/white"
+        android:textSize="44sp" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:background="#0070ff"
         android:gravity="center_horizontal"
         android:text="NIT Kumamoto Campus"
