@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -23,6 +24,8 @@ public class DeleteSpotActivity extends AppCompatActivity {
 
     ReadJson spot_data = new ReadJson();
 
+    String PASSWORD = "te14shigashan"; //削除画面起動用パスワード
+
     String delete_name[];
 
 
@@ -33,6 +36,7 @@ public class DeleteSpotActivity extends AppCompatActivity {
         setContentView(R.layout.activity_delete_spot);
 
         new AlertDialog.Builder(DeleteSpotActivity.this)
+                .setCancelable(false)
                 .setTitle("注意！！")
                 .setMessage("管理人用メニューです！！あなたが管理人でないなら戻るを押してください！！")
                 .setPositiveButton("私は管理人です", null)
@@ -100,7 +104,19 @@ public class DeleteSpotActivity extends AppCompatActivity {
 
         });
 
-        spot_data.rereadVolley();
+        final EditText passwordinput = (EditText)findViewById(R.id.passWordInput);
 
+        Button button_submit = (Button)findViewById(R.id.button_submit);
+        button_submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(PASSWORD.equals(passwordinput.getText().toString())){
+                    Toast.makeText(safetymap.getAppContext(),"削除画面起動",Toast.LENGTH_SHORT).show();
+                    spot_data.rereadVolley();
+                }else{
+                    Toast.makeText(safetymap.getAppContext(),"パスワードが違います",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 }
