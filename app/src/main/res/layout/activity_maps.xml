@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="マーカーをタップすると名前が表示されます。&#xA;更に吹き出しをタップすると詳細が表示されます。&#xA;変なマーカーがあったら管理者側で削除します。"
+        android:text="マーカーをタップすると名前が表示されます。&#xA;更に吹き出しをタップすると詳細が表示されます。&#xA;変なマーカーがあったら管理者側で削除します。&#xA;タップ時、タップ地点の緯度、経度がコピーされるので&#xA;スポット追加時の参考にしてください。"
         android:textSize="13sp" />
 
 </FrameLayout>

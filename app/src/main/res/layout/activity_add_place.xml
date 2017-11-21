@@ -14,7 +14,7 @@
         android:layout_gravity="center"
         android:orientation="vertical"
         android:weightSum="1"
-        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteX="3dp"
         tools:layout_editor_absoluteY="8dp">
 
 
@@ -49,14 +49,6 @@
                 android:inputType="text" />
 
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="公共の場所でないなら、名前欄に住所も入力してください。"
-            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/apptitle"
@@ -131,6 +123,15 @@
 
         </LinearLayout>
 
+        <Button
+            android:id="@+id/button_copy"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="5dp"
+            android:background="#0070ff"
+            android:text="コピーされた緯度経度を追加"
+            android:textColor="@android:color/white" />
+
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
@@ -138,7 +139,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="デフォルトで合志市役所の緯度経度が入力されています&#xA;関係ないマーカーは追加しないでください&#xA;(フリじゃありません)" />
+            android:text="デフォルトで合志市役所の緯度経度が入力されています&#xA;緯度経度はマップを開く機能から調べられます&#xA;関係ないマーカーは管理人が見つけ次第削除します。" />
 
         <Button
             android:id="@+id/add_button"

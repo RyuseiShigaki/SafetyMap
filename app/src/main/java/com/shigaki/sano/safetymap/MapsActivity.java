@@ -2,6 +2,9 @@ package com.shigaki.sano.safetymap;
 
 import android.Manifest;
 import android.app.LoaderManager;
+import android.content.ClipData;
+import android.content.ClipDescription;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.Loader;
@@ -42,6 +45,8 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -63,6 +68,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     HashMap<String,Integer> marker_total_collect = new HashMap<>();
     HashMap<String,Integer> marker_total_wrong = new HashMap<>();
 
+    LatLng default_pos = new LatLng(0,0);
+
+    Marker m_copied;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,6 +104,29 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         ReadJson json1 = new ReadJson();
 
         mMap = googleMap;
+        BitmapDescriptor icon = BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYANm);
+
+        m_copied = mMap.addMarker(new MarkerOptions().position(default_pos).icon(icon));
+
+        mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+            @Override
+            public void onMapClick(LatLng point) {
+                // TODO Auto-generated method stub
+                m_copied.setPosition(point);
+                Toast.makeText(getApplicationContext(), "タップ位置をコピーしました\n緯度：" + point.latitude + "\n経度:" + point.longitude, Toast.LENGTH_LONG).show();
+                ClipData.Item item = new ClipData.Item("緯度：," + point.latitude + ",経度:," + point.longitude);
+                //MIMETYPEの作成
+                String[] mimeType = new String[1];
+                mimeType[0] = ClipDescription.MIMETYPE_TEXT_PLAIN;
+                //クリップボードに格納するClipDataオブジェクトの作成
+                ClipData cd = new ClipData(new ClipDescription("text_data", mimeType), item);
+                //クリップボードにデータを格納
+                ClipboardManager cm = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+                cm.setPrimaryClip(cd);
+
+            }
+        });
+
 
         // 各マーカーの座標
         LatLng koshi = new LatLng(32.886034, 130.789461);

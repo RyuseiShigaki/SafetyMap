@@ -24,6 +24,8 @@ public class DeleteSpotActivity extends AppCompatActivity {
 
     ReadJson spot_data = new ReadJson();
 
+    DeleteSpot del;
+
     String PASSWORD = "te14shigashan"; //削除画面起動用パスワード
 
     String delete_name[];
@@ -80,9 +82,27 @@ public class DeleteSpotActivity extends AppCompatActivity {
 
                     for (int i = 0; i < result.length(); i++) {
 
+
                         spot_button[i].setOnClickListener(new View.OnClickListener() {
                             public void onClick(View view) {
-                                DeleteSpot del = new DeleteSpot(delete_name[view.getId()]);
+
+                                del = new DeleteSpot(delete_name[view.getId()]);
+
+                                new AlertDialog.Builder(DeleteSpotActivity.this)
+                                        .setCancelable(false)
+                                        .setTitle("注意！！")
+                                        .setMessage("本当に削除しますか？")
+                                        .setPositiveButton("はい", new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                // はい button pressed
+                                                del.rereadVolley();
+                                                Intent intent = new Intent(DeleteSpotActivity.this, MainActivity.class);
+                                                startActivity(intent);
+                                            }
+                                        })
+                                        .setNegativeButton("戻る", null).show();
+
                                 del.setOnCallBack(new DeleteSpot.CallBackTask(){
                                     @Override
                                     public void CallBack(String response){
@@ -91,7 +111,7 @@ public class DeleteSpotActivity extends AppCompatActivity {
                                         startActivity(intent);
                                     }
                                 });
-                                del.rereadVolley();
+
                             }
                         });
                     }

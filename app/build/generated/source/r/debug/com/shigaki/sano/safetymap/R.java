@@ -2605,9 +2605,9 @@ containing a value of this type.
         public static final int activity_chooser_view_content=0x7f0b003a;
         public static final int add=0x7f0b001b;
         public static final int add_button=0x7f0b0073;
-        public static final int add_explanation=0x7f0b006d;
-        public static final int add_latitude=0x7f0b006f;
-        public static final int add_longitude=0x7f0b0071;
+        public static final int add_explanation=0x7f0b006c;
+        public static final int add_latitude=0x7f0b006e;
+        public static final int add_longitude=0x7f0b0070;
         public static final int add_name=0x7f0b006a;
         public static final int add_user_spot=0x7f0b007a;
         public static final int adjust_height=0x7f0b0025;
@@ -2615,13 +2615,14 @@ containing a value of this type.
         public static final int alertTitle=0x7f0b004e;
         public static final int all=0x7f0b000e;
         public static final int always=0x7f0b002a;
-        public static final int apptitle=0x7f0b006c;
+        public static final int apptitle=0x7f0b006b;
         public static final int auto=0x7f0b0032;
         public static final int basic=0x7f0b000f;
         public static final int beginning=0x7f0b0022;
         public static final int bottom=0x7f0b0035;
         public static final int buttonPanel=0x7f0b0041;
         public static final int button_collect=0x7f0b0088;
+        public static final int button_copy=0x7f0b0071;
         public static final int button_hide=0x7f0b0077;
         public static final int button_open_map=0x7f0b007b;
         public static final int button_submit=0x7f0b0075;
@@ -2722,10 +2723,9 @@ containing a value of this type.
         public static final int text2=0x7f0b00a1;
         public static final int textSpacerNoButtons=0x7f0b0048;
         public static final int textSpacerNoTitle=0x7f0b0047;
-        public static final int textView=0x7f0b006e;
+        public static final int textView=0x7f0b006d;
         public static final int textView10=0x7f0b0083;
-        public static final int textView11=0x7f0b006b;
-        public static final int textView2=0x7f0b0070;
+        public static final int textView2=0x7f0b006f;
         public static final int textView3=0x7f0b0072;
         public static final int textView4=0x7f0b0081;
         public static final int textView5=0x7f0b0080;
@@ -2817,7 +2817,8 @@ containing a value of this type.
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
         public static final int ic_launcher_round=0x7f030001;
-        public static final int safety_icon=0x7f030002;
+        public static final int marker_copied=0x7f030002;
+        public static final int safety_icon=0x7f030003;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f060000;

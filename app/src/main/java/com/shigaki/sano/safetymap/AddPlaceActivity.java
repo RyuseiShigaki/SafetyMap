@@ -1,6 +1,8 @@
 package com.shigaki.sano.safetymap;
 
 import android.app.AlertDialog;
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -41,6 +43,33 @@ public class AddPlaceActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_place);
 
         Button add_button = (Button)findViewById(R.id.add_button);
+
+        Button copy_button = (Button)findViewById(R.id.button_copy);
+
+        copy_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipboardManager cm = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+                ClipData clipData = cm.getPrimaryClip();
+                if (clipData != null) {
+
+                    ClipData.Item item = clipData.getItemAt(0);
+                    String copy_data = item.getText().toString();
+                    String copy_array[] = copy_data.split(",",0);
+                    if(copy_array.length == 4) {
+                        EditText add_latitude = (EditText)findViewById(R.id.add_latitude);
+                        EditText add_longitude = (EditText) findViewById(R.id.add_longitude);
+                        add_latitude.setText(copy_array[1]);
+                        add_longitude.setText(copy_array[3]);
+                        Toast.makeText(safetymap.getAppContext(),"コピーされた緯度経度を入力しました",Toast.LENGTH_SHORT).show();
+                    }else{
+                        Toast.makeText(safetymap.getAppContext(),"「マップを開く画面」から緯度経度をコピーしてください",Toast.LENGTH_SHORT).show();
+                    }
+                }else{
+                    Toast.makeText(safetymap.getAppContext(),"「マップを開く画面」から緯度経度をコピーしてください",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override

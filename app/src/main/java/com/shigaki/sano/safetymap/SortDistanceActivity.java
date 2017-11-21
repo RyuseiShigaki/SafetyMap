@@ -35,6 +35,8 @@ public class SortDistanceActivity extends AppCompatActivity {
     Distance distance[];
     double mylat,mylng;
 
+    double lat_data[];
+    double lng_data[];
 
     ReadJson spot_data = new ReadJson();
 
@@ -71,6 +73,8 @@ public class SortDistanceActivity extends AppCompatActivity {
 
                 distance = new Distance[result.length()];
                 Button spot_button[] = new Button[result.length()];
+                lat_data = new double[result.length()];
+                lng_data = new double[result.length()];
 
                 LinearLayout.LayoutParams layout_params = new LinearLayout.LayoutParams(WC, WC);
                 LinearLayout linearLayout = (LinearLayout) findViewById(R.id.linearid);
@@ -88,6 +92,9 @@ public class SortDistanceActivity extends AppCompatActivity {
 
                         latitude = result.getJSONObject(i).getDouble("latitude");
                         longitude = result.getJSONObject(i).getDouble("longitude");
+
+                        lat_data[i] = result.getJSONObject(i).getDouble("latitude");
+                        lng_data[i] = result.getJSONObject(i).getDouble("longitude");
 
                         Location.distanceBetween(latitude, longitude, mylat, mylng, results);
 
@@ -120,12 +127,15 @@ public class SortDistanceActivity extends AppCompatActivity {
 
                 for (int i = 0; i < result.length(); i++) {
                     spot_button[i].setOnClickListener(new View.OnClickListener() {
+                        @Override
                         public void onClick(View view) {
-                            String dest_name = distance[view.getId()].name;
+                            //String dest_name = distance[view.getId()].name;
+                            double dest_lat = lat_data[view.getId()];
+                            double dest_lng = lng_data[view.getId()];
                             Intent intent = new Intent();
                             intent.setAction(Intent.ACTION_VIEW);
-                            intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
-                            intent.setData(Uri.parse("http://maps.google.com/maps?saddr=" + "現在地" + "&daddr=" + dest_name + "&dirflg=" + "w"));
+                            intent.setClassName("com.google.android.apps.maps","com.google.android.maps.MapsActivity");
+                            intent.setData(Uri.parse("http://maps.google.com/maps?saddr="+mylat+","+mylng+"&daddr="+dest_lat+","+dest_lng));
                             startActivity(intent);
                         }
                     });

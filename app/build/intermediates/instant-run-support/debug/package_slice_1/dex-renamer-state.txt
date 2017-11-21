@@ -1,4 +1,4 @@
-#Fri Nov 17 20:41:49 JST 2017
-base.0=/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1
+#Sun Nov 19 14:04:58 JST 2017
+base.0=/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1
 renamed.0=classes.dex
-file.0=/home/ubuntu/AndroidStudioProjects/safetymap/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex
+file.0=/home/shigashan/AndroidStudioProjects/safetymap/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex
